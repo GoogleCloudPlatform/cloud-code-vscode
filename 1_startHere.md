@@ -14,8 +14,8 @@ In that order as VS Code itself is best for those.
 
 You won't get far without these - we can help but these will be base assumptions...
 
-- VS Code installed and set-up for your OS e.g. on PATH
-- Language support installed and configured for VS code i.e. Go, Node, Python or Java
+- [VS Code installed](https://code.visualstudio.com/) and set-up for your OS e.g. on PATH
+- Language support installed and configured for VS code i.e. [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go), Node (built in), [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) or [Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
 - Basic knowledge of VS Code and K8's we are not attempting to cover that
 
 
@@ -23,8 +23,8 @@ You won't get far without these - we can help but these will be base assumptions
 > End users will not have to do this.  This is required as we have not released the extensions yet.  We have also not finalized naming or structure.
 
 download these two extensions:
-1.
-2.
+1. [Kubernetes](https://storage.cloud.google.com/vsocde-empathy-session/kubecode-kubernetes-0.0.1.vsix?_ga=2.135896881.-1835217743.1494865118)
+2. [GKE](https://storage.cloud.google.com/vsocde-empathy-session/kubecode-gke-0.0.1.vsix)
 
 From within VS Code's extension view:
 
@@ -38,7 +38,7 @@ Click install from VSIX and browse to the extensions on your disk.  Install each
 
 - An account
 - Billing enabled
-- Kubernettes enabled
+- Kubernetes enabled (kubectl installed)
 
 ## Welcome Experience
 
