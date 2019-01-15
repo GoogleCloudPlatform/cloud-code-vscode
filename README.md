@@ -8,7 +8,7 @@ It's an extension for VS Code that helps you easily set-up your development tool
 
 There are two docs to help you:
 1. [Set-up your machine](1_startHere.md) and get our extension
-1. Take a quick look at some [Known Issues](knownIssues.md) and workarounds.
+1. Take a quick look at some [known Issues](knownIssues.md) and workarounds.
 1. See a [feature tour](2_featureTour.md) of the extension
 
 # Filling an Issue
