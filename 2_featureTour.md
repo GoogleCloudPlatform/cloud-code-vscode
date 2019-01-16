@@ -21,6 +21,8 @@ Creation time will vary depending on the cluster hoster - for GKE you should exp
 
 ![GKE Cluster create](images/createGKECluster.gif)
 
+> **Tip:** You can find this command via the `pen` icon in the GKE Explorer.  
+![GKE Actions](images/GKEActions.png)
 
 ## Create an Application
 
