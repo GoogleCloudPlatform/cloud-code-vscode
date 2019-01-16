@@ -132,9 +132,17 @@ When you hover over a value we will sho the relevant docs from the schema.
 
 ![YAML Hover](images/YAMLhoverDocs.png)
 
+### YAML Diffing
+
+You can view the diff between a YAML file in source control and the deployed YAML file.
+
+![YAML Diff Command](images/YAMLpre-diff.png)
+
+![YAML Diff](images/YAMLdiff.png)
+
 ### Working with Secrets
 
-Using config m,aps and secrets is a key part of working with K8's.  Our extension makes it easy to understand the contexts of a base 64 secret with a simple hover to decode.
+Using config maps and secrets is a key part of working with K8's.  Our extension makes it easy to understand the contexts of a base 64 secret with a simple hover to decode.
 
 ![YAML Hover](images/YAMLsecretDecode.png)
 
@@ -145,6 +153,16 @@ TODO
 ## Support for Cloud Source Repos
 
 It's git and we install the `GCloud CLI` so it just works in terms of VS Codes integrated Git support.
+
+## Working with Skaffold
+
+### Skaffold Snippets
+
+We provide snippets out of the box for Skaffold schema.  These make it easy to start a new Skaffold file or add to an existing one without errors (and following best practice). 
+
+![Skaffold Snippets](images/Skaffoldsnippet.png)
+
+## Tree Explorer
 
 ## Command Reference
 In the VS Code Command Pallette you can see a set of `KubeCode:` commands to try:
