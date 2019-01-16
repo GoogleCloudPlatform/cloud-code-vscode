@@ -178,6 +178,39 @@ You can view existing clusters, create new clusters and set cluster as the activ
 
 The Kubernetes explorer you to interact with Clusters in a unique and simple way.
 
+Most resources have three basic functions (on top of others listed below):
+- Copy Resource Value - will copy the value to the clipboard for easy use
+- Describe - Does a `kubectl describe` of the resource.
+- Delete - Deletes the resource.
+
+[Basic Commands](images/k8s-basic.png)
+
+### Clusters
+
+Set as Active Cluster - This will enable you too easily interact with them in the Kubernetes explorer.
+
+[Set as Active Cluster ](images/k8s-set.png)
+
+Open Dashboard - will open the kubernetes dashboard for that cluster.
+
+[Open Dashboard](images/k8s-open-dashboard.png)
+
+
+### Deployments
+
+TODO
+
+### Pods
+
+TODO
+
+### Services
+
+TODO
+
+### Secrets
+
+TODO
 
 ## Command Reference
 In the VS Code Command Pallette you can see a set of `KubeCode:` commands to try:
