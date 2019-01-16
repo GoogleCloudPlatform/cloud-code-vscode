@@ -23,8 +23,8 @@ You won't get far without these - we can help but these will be base assumptions
 > End users will not have to do this.  This is required as we have not released the extensions yet.  We have also not finalized naming or structure.
 
 download these two extensions:
-1. [Kubernetes](https://storage.cloud.google.com/vsocde-empathy-session/kubecode-kubernetes-0.0.1.vsix?_ga=2.135896881.-1835217743.1494865118)
-2. [GKE](https://storage.cloud.google.com/vsocde-empathy-session/kubecode-gke-0.0.1.vsix)
+1. [Kubernetes](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/blob/master/Extensions/kubecode-kubernetes-0.0.1.vsix?raw=true)
+2. [GKE](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/blob/master/Extensions/kubecode-gke-0.0.1.vsix?raw=true)
 
 From within VS Code's extension view:
 
