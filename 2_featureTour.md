@@ -82,13 +82,13 @@ For instance our `KubeCode: New Application` command will produce templates that
 
 ## Kubernetes Explorer
 
-Our extension contributes an explorer to the VS Code activity bar.  This powered by `kubectl` under the covers and will work on any supported cluster.
+Our extension contributes an explorer to the VS Code activity bar.  This is powered by `kubectl` under the covers and will work on any supported cluster.
 
 To navigate there click on this icon:
 
 ![K8s explorer icon](images/explorerIcon.png)
 
-From here you can access your K8s clusters and run a variety of commands, allowing you to interact with K8s resources in a unique and simple way.
+From here, you can access your K8s clusters and run a variety of commands, allowing you to interact with K8s resources in a unique and simple way.
 
 ![K8s explorer](images/clusterExplorer.png)
 
