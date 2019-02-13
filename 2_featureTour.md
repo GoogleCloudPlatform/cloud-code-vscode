@@ -82,21 +82,72 @@ For instance our `KubeCode: New Application` command will produce templates that
 
 ## Kubernetes Explorer
 
-Our extension contributes an explorer to the VS Code activity bar.  This powered by `kubectl` under the covers and will work on any supported cluster.  
+Our extension contributes an explorer to the VS Code activity bar.  This is powered by `kubectl` under the covers and will work on any supported cluster.
 
 To navigate there click on this icon:
 
 ![K8s explorer icon](images/explorerIcon.png)
 
-From here you can access your K8s clusters and run a variety of commands.
+From here, you can access your K8s clusters and run a variety of commands, allowing you to interact with K8s resources in a unique and simple way.
 
 ![K8s explorer](images/clusterExplorer.png)
 
-TODO: All the cool stuff you can do from here:
-- YAML Diff
-- Get IP Address
-- Open Browser
-- ...
+Most resources have three basic functions (on top of others listed below):
+- Copy Resource Name - Copy the name to the clipboard for easy use
+- Describe - Do a `kubectl describe` of the resource.
+- Delete - Delete the resource.
+
+![Basic Commands](images/k8s-basic.png)
+
+### Clusters
+
+Set as Active Cluster - Enable you too easily interact with them in the Kubernetes explorer.
+
+![Set as Active Cluster ](images/k8s-set.png)
+
+Open Dashboard - Open the kubernetes dashboard for that cluster.
+
+![Open Dashboard](images/k8s-open-dashboard.png)
+
+### Deployments
+
+Add Secret as Environment Variable - Add an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] to the deployment as an environment variable.
+
+TODO: picture
+
+Mount Secret as Volume - Mount an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] as a volume in the deployment's container.
+
+TODO: picture
+
+### Pods
+
+Stream Logs - Stream logs from a pod. If there are multiple containers in the pod, you will be asked to select one.
+
+TODO: picture
+
+View Logs - View logs from a pod. If there are multiple containers in the pod, you will be asked to select one.
+
+TODO: picture
+
+### Containers
+
+Stream Logs - Same as above
+
+View Logs - Same as above
+
+Get Terminal - Open an interactive terminal to the container.
+
+TODO: picture
+
+### Services
+
+For `External IP` object, you can click on a button to open the address in a web browser.
+
+TODO: picture
+
+### Secrets
+
+Clicking on secret object will display the decoded secret as a file.
 
 ## Working with Logs
 
@@ -173,44 +224,6 @@ You can view existing clusters, create new clusters and set cluster as the activ
 ### Set as Active Cluster
 
 ![GKE Cluster](images/gke-cluster.png)
-
-## Kubernetes Explorer
-
-The Kubernetes explorer you to interact with Clusters in a unique and simple way.
-
-Most resources have three basic functions (on top of others listed below):
-- Copy Resource Value - will copy the value to the clipboard for easy use
-- Describe - Does a `kubectl describe` of the resource.
-- Delete - Deletes the resource.
-
-[Basic Commands](images/k8s-basic.png)
-
-### Clusters
-
-Set as Active Cluster - This will enable you too easily interact with them in the Kubernetes explorer.
-
-[Set as Active Cluster ](images/k8s-set.png)
-
-Open Dashboard - will open the kubernetes dashboard for that cluster.
-
-[Open Dashboard](images/k8s-open-dashboard.png)
-
-
-### Deployments
-
-TODO
-
-### Pods
-
-TODO
-
-### Services
-
-TODO
-
-### Secrets
-
-TODO
 
 ## Command Reference
 In the VS Code Command Pallette you can see a set of `KubeCode:` commands to try:
