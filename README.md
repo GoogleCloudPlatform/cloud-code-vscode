@@ -1,6 +1,6 @@
-# Welcome to KubeCode (not final name)
+# Welcome to Cloud Code for Visual Studio Code
 
-# What is KubeCode
+# What is Cloud Code for Visual Studio Code
 
 It's an extension for VS Code that helps you easily set-up your development tool chain and deploy to a cluster with a tight edit-package-deploy loop.  It supports debugging and eases working with K8s artifacts and commands.
 
@@ -13,6 +13,6 @@ There are two docs to help you:
 
 # Filling an Issue
 
-If you find an issue please file a bug via the command `KubeCode: Report Kubernetes' Extension Issue on Github`.
+If you find an issue please file a bug via the command `Cloud Code: Report Kubernetes' Extension Issue on Github`.
 
 

@@ -1,12 +1,12 @@
-# KubeCode Feature Tourz
+# Cloud Code for Visual Studio Code Feature Tour
 
 > The tools you need for Cloud Native development leveraging your favorite OS, language and cloud.
 
 **Have you ensured your [environment is configured](1_startHere.md) if not do that first.**
 
-This guide is designed to highlight and core features in KubeCode.  Each section has additional supporting docs linked and there is a catch-all section for cool features not sufficiently covered elsewhere.
+This guide is designed to highlight and core features in Cloud Code for Visual Studio Code.  Each section has additional supporting docs linked and there is a catch-all section for cool features not sufficiently covered elsewhere.
 
-In many ways the whole goal of KubeCode is to let you focus on your code versus needing to loose context and drop to a CLI, portal or some other tool for very common tasks.  As a result we have worked hard to ensure you can work like you normally would in VS Code.
+In many ways the whole goal of Cloud Code for Visual Studio Code is to let you focus on your code versus needing to loose context and drop to a CLI, portal or some other tool for very common tasks.  As a result we have worked hard to ensure you can work like you normally would in VS Code.
 
 
 ## Create a Cluster
@@ -29,7 +29,7 @@ Creation time will vary depending on the cluster hoster - for GKE you should exp
 We have the ability to create a new project for you in your language of choice.  This is a great place to start for simple demos and for this feature tour:
 
 - Open the command pallette 
-- Select `KubeCode: New Application`
+- Select `Cloud Code: New Application`
 - Select the language of your choice
 - Accept of change the default location
 
@@ -46,7 +46,7 @@ For more details on what we create and additional options review the [New Applic
 
 Under the covers we leverage `Skaffold` - this means that as you edit we automatically re-build and re-package your code and deploy it to a cluster.
 
-The first step is to execute the `KubeCode: Deploy` command - this will build your containers, push them to the registry, apply cluster configs and then return you the IP address you can use to browse.
+The first step is to execute the `Cloud Code: Deploy` command - this will build your containers, push them to the registry, apply cluster configs and then return you the IP address you can use to browse.
 
 ![Deploy](images/packageAndDeploy.gif)
 
@@ -75,7 +75,7 @@ Once you can [deploy](#TODO) to a cluster debugging is as simple as setting a br
 
 ![Debugging](images/debug.gif)
 
-For instance our `KubeCode: New Application` command will produce templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a lunch configuration for each of the two included microservices.
+For instance our `Cloud Code: New Application` command will produce templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a lunch configuration for each of the two included microservices.
 
 ![launch json](images/debuggerConfig.png)
 
@@ -151,11 +151,11 @@ Clicking on secret object will display the decoded secret as a file.
 
 ## Working with Logs
 
-Run the command `KubeCode: Stream Logs` and provide the pod and container context.
+Run the command `Cloud Code: Stream Logs` and provide the pod and container context.
 
 ![Stream Logs](images/logStream.gif)
 
-We also support loading the entire log in an editor window via the command `KubeCode: View Logs` and provide the pod and container context.
+We also support loading the entire log in an editor window via the command `Cloud Code: View Logs` and provide the pod and container context.
 
 
 ## Working with K8's YAML
@@ -226,9 +226,9 @@ You can view existing clusters, create new clusters and set cluster as the activ
 ![GKE Cluster](images/gke-cluster.png)
 
 ## Command Reference
-In the VS Code Command Pallette you can see a set of `KubeCode:` commands to try:
+In the VS Code Command Pallette you can see a set of `Cloud Code:` commands to try:
 
-![KubeCode Commands](images/commands.gif)
+![Cloud Code Commands](images/commands.gif)
 
 | Command                                                              | Purpose                                              |
 |----------------------------------------------------------------------|------------------------------------------------------|

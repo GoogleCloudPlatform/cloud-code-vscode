@@ -1,6 +1,6 @@
 # Debugging Kubernetes Containers
 
-The KubeCode Extension supports Kubernetes container debugging for the following languages:
+The Cloud Code for Visual Studio Code Extension supports Kubernetes container debugging for the following languages:
 * `Python`
 * `Node`
 * `Java`
@@ -15,7 +15,7 @@ For each of these languages, [launch and attach configuration snippets](https://
 
 * Open the application in VSCode.
 
-* Open `launch.json` (more instructions on this [here](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations)) and use autocomplete to add the corresponding language debug configuration. For example, for Node.js, this would be `KubeCode Debug: Launch (Node.js)` or `KubeCode Debug: Attach (Node.js)`.
+* Open `launch.json` (more instructions on this [here](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations)) and use autocomplete to add the corresponding language debug configuration. For example, for Node.js, this would be `Cloud Code Debug: Launch (Node.js)` or `Cloud Code Debug: Attach (Node.js)`.
 
 * Edit attributes like `podSelector` and `debugPort` to your likings (see [configuration attributes](#configuration-attributes)).
 

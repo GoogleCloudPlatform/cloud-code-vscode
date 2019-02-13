@@ -1,4 +1,4 @@
-# KubeCode Advanced Topics
+# Cloud Code for Visual Studio Code Advanced Topics
 
 ## Command Reference
 

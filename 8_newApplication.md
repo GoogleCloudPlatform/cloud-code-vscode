@@ -1,6 +1,6 @@
 # New Application
 
-KubeCode makes it easy to create a basic 2 microservice app from a set of templates.  We include templates for:
+Cloud Code for Visual Studio Code makes it easy to create a basic 2 microservice app from a set of templates.  We include templates for:
 
 - NodeJS
 - Go
