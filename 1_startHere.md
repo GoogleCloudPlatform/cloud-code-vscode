@@ -34,6 +34,12 @@ Click install from VSIX and browse to the extensions on your disk.  Install each
 
 ![Install from VSIX](images/installFromVSIX.png)
 
+## Kubernetes Extension Pre-reqs 
+
+- Docker client should be [`installed`](https://docs.docker.com/install/), added to the path and logged into a docker registry.
+- Kubectl should be [`installed`](https://kubernetes.io/docs/tasks/tools/install-kubectl/), added to the path and connected to a cluster.
+- Skaffold client should be [`installed`](https://github.com/GoogleContainerTools/skaffold#installation) and added to the path.
+
 # GCP Pre-reqs
 
 - An account
