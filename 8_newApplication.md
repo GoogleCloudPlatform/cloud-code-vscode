@@ -17,10 +17,12 @@ They all really have the same structure across all languages. We will use the No
 ```
 .               
 |---- .vscode   
-|      └---- launch.json        debugger config to connect to the cluster and containers
+|      └---- launch.json                debugger config to connect to the cluster and containers
 |---- kubernetes-manifests
-|     |---- backend.yaml        the pod specification for the backend nodes
-|     └---- frontend.yaml       the pod specification for the frontend nodes
+|     |---- backend.deployment.yaml     the pod specification for the backend nodes
+|     |---- backend.service.yaml        
+|     |---- frontend.deployment.yaml    the pod specification for the frontend nodes
+|     └---- frontend.service.yaml       
 |---- src
 |     |---- backend
 |     |     |---- Dockerfile

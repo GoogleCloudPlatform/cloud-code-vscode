@@ -31,7 +31,7 @@ We have the ability to create a new project for you in your language of choice. 
 - Open the command pallette 
 - Select `Cloud Code: New Application`
 - Select the language of your choice
-- Accept of change the default location
+- Accept or change the default location
 
 ![New Project](images/newApplication.gif)
 
