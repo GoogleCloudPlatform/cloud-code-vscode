@@ -3,7 +3,7 @@ You can use this wizard to start/stop and get status of a Minikube cluster. It w
 
 ## Prerequisites
 1. All the prerequisites mentioned [here](https://kubernetes.io/docs/tasks/tools/install-minikube/#before-you-begin) are met.
-2. Minikube binary is added to PATH variable or to `"cloudcode.minikubePath"` VSCode setting.
+2. Minikube binary is added to PATH variable or to `"cloudcode.minikubePath"` VSCode settings.
 
 ## Dashboard
 ![Dashboard](images/minikube/dashboard.png)
