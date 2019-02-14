@@ -75,9 +75,11 @@ Once you can [deploy](#TODO) to a cluster debugging is as simple as setting a br
 
 ![Debugging](images/debug.gif)
 
-For instance our `Cloud Code: New Application` command will produce templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a lunch configuration for each of the two included microservices.
+For instance our `Cloud Code: New Application` command will create applications from pre-defined templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a launch configuration for each of the two included microservices.
 
 ![launch json](images/debuggerConfig.png)
+
+For more details, refer to the [Debugging Doc](4_debugging.md)
 
 
 ## Kubernetes Explorer
@@ -99,55 +101,8 @@ Most resources have three basic functions (on top of others listed below):
 
 ![Basic Commands](images/k8s-basic.png)
 
-### Clusters
+For more details on the different functions on each resource, refer to the [Kubernetes Explorer doc](10_kubernetesExplorer.md)
 
-Set as Active Cluster - Enable you too easily interact with them in the Kubernetes explorer.
-
-![Set as Active Cluster ](images/k8s-set.png)
-
-Open Dashboard - Open the kubernetes dashboard for that cluster.
-
-![Open Dashboard](images/k8s-open-dashboard.png)
-
-### Deployments
-
-Add Secret as Environment Variable - Add an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] to the deployment as an environment variable.
-
-TODO: picture
-
-Mount Secret as Volume - Mount an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] as a volume in the deployment's container.
-
-TODO: picture
-
-### Pods
-
-Stream Logs - Stream logs from a pod. If there are multiple containers in the pod, you will be asked to select one.
-
-TODO: picture
-
-View Logs - View logs from a pod. If there are multiple containers in the pod, you will be asked to select one.
-
-TODO: picture
-
-### Containers
-
-Stream Logs - Same as above
-
-View Logs - Same as above
-
-Get Terminal - Open an interactive terminal to the container.
-
-TODO: picture
-
-### Services
-
-For `External IP` object, you can click on a button to open the address in a web browser.
-
-TODO: picture
-
-### Secrets
-
-Clicking on secret object will display the decoded secret as a file.
 
 ## Working with Logs
 
@@ -230,29 +185,4 @@ In the VS Code Command Pallette you can see a set of `Cloud Code:` commands to t
 
 ![Cloud Code Commands](images/commands.gif)
 
-| Command                                                              | Purpose                                              |
-|----------------------------------------------------------------------|------------------------------------------------------|
-| Help                                                                 | View our welcome experience                          |
-| Report Kubernetes' Extension Issue on Github                         | opens a pre-populates issue on Github                |
-| [New Application](#create-an-application)                            | Create a new application from a template             |
-| [Deploy](#deploy-for-the-first-time)                                 | Deploy the current application to the active cluster |
-| Set as Current Context                                               | Set the context for the active cluster               |
-| Remove from Context                                                  | Sets the given cluster as the current active cluster |
-| Set as Active Namespace                                              | Sets the given namespace as the current active namespace. |
-| Refresh Cluster Context Explorer                                     | Refresh the explorer                                |
-| [View Logs](#working-with-logs)                                      | Opens a terminal and write out the current logs from the container. |
-| [Stream Logs](#working-with-logs)                                    | Opens a terminal and stream logs from the container. |
-| Copy Resource Value                                                  | Copy the value of the given resource                 |
-| Open Address                                                         |                                                      |
-| Describe                                                             | Gives a detailed description of the resource.        |
-| Delete                                                               | Deletes the given resource                           |
-| Open Dashboard                                                       | Opens the Kubernetes dashboard                       |
-| Get Terminal                                                         | Opens a terminal into the container                  |
-| Create Kubernetes resource from current file                         |                                                      |
-| Diff the current JSON/YAML file with Kubernetes deployed resource    |                                                      |
-| Apply the current JSON/YAML file to the Kubernetes deployed resource |                                                      |
-| Open Minikube dashboard for starting/stopping local Minikube cluster |                                                      |
-| Open Minikube dashboard                                              |                                                      |
-| Mount Secret as Volume                                               | Mounts the secret as a deployment in a base-64 decoded file. |
-| Add Secret as Environment Variable                                   | Adds an environment variable to the deployment with the value of the secret (base-64 decoded). |
-
+For more details, refer to the (Command Reference)[11_commandReference.md]
