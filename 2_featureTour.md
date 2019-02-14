@@ -75,7 +75,7 @@ Once you can [deploy](#TODO) to a cluster debugging is as simple as setting a br
 
 ![Debugging](images/debug.gif)
 
-For instance our `Cloud Code: New Application` command will produce templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a launch configuration for each of the two included microservices.
+For instance our `Cloud Code: New Application` command will create applications from pre-defined templates that include the relevant debugger launch configurations.  Below is an example from the NodeJS starter application with a launch configuration for each of the two included microservices.
 
 ![launch json](images/debuggerConfig.png)
 
