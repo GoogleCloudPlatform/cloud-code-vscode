@@ -20,7 +20,7 @@ You won't get far without these - we can help but these will be base assumptions
 
 
 # Installing the extensions
-Download the most up to date extensions from the [releases page](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/release)
+Download the most up to date extensions from the [releases page](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/releases)
 
 From within VS Code's extension view:
 
