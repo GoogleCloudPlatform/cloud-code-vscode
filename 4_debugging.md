@@ -103,4 +103,4 @@ RUN apt-get update \
 
 * `protocol`: Node.js debug protocol used. Defaults to `auto`.
 
-* `continuous`: If true, will deploy continuously. Deployments happen in the background each time a file change is detected.
+* `continuous`: If true, will deploy continuously. Deployments happen in the background each time a file change is detected. This is only applicable to launch (and not attach) configuration.
