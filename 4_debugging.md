@@ -59,7 +59,7 @@ This will start the Java application in debug mode and listen on port `debugPort
 
 * Python debugging requires `ptvsd` [module](https://github.com/Microsoft/ptvsd) installed on your machine. The extension will ask for permission to install this module if it cannot be found when the configuration is launched.
 
-* The Python container also needs to have `ptvsd` module installed and the Python application needs to be started through `ptvsd` (more instructions [here](https://github.com/Microsoft/ptvsd#ptvsd-cli-usage)). The port specified in the starting command should be the same as the port in `debugPort` attribute of the debug configuration. For example:
+* The Python container also needs to have `ptvsd` module installed and your script needs to import and call `ptvsd.enable_attach` at the beginning (more instructions [here](https://github.com/Microsoft/ptvsd#enable-debugging)). The port specified in the `enable_attach` call should be the same as the port in `debugPort` attribute of the debug configuration. For example:
 ```
 CMD ["python", "-m", "ptvsd", "--port", "<debugPort>", "app.py"]
 ```
