@@ -42,29 +42,23 @@ For more details on what we create and additional options review the [New Applic
 > **NOTE:** we will add this to the currently opened workspace - however we suggest you close VS Code and re-open VS code in the new location - ignore the warning about saving the workspace.
 
 
-## Deploy for the First Time
+## Deploy an Application
 
-Under the covers we leverage `Skaffold` - this means that as you edit we automatically re-build and re-package your code and deploy it to a cluster.
-
-The first step is to execute the `Cloud Code: Deploy` command - this will build your containers, push them to the registry, apply cluster configs and then return you the IP address you can use to browse.
+The `Cloud Code: Deploy` command will build your containers, push them to the registry, apply cluster configs and then return you the IP address you can use to browse.
 
 ![Deploy](images/packageAndDeploy.gif)
 
 
-## Edit Inner Loop
+## Edit Inner Loop - Continuous Deployment
 
-We can have a tight development inner loop via `skaffold dev`.  What this does is watch the file system for changes to your files (K8s config or Code) and rebuilds the container and re-deploys to the cluster.
+We can have a tight development inner loop via `Cloud Code: Continuous Deploy` command.  This command continuously watches the file system for changes to your files (K8s config or Code), rebuilds the container(s) and re-deploys to the cluster, so your edits will be reflected in near real time.
 
-To do this open the VS Code terminal and type `skaffold dev`.  This will start the watcher and from there edits will be reflected in near real time.
-
-Skaffold only builds and deploys the parts you need it to.
+This command uses Skaffold underneath and it only builds and deploys the parts you need it to.
 
 ![Deploy](images/skaffoldDev.gif)
 
 
 > **TIP:** You may want to disable AutoSave in VS Code if you use this option.
-
-> **TIP:** To exit `skaffold dev` press `ctrl+c`.
 
 
 ## Debugging

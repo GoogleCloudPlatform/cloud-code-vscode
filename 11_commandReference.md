@@ -6,6 +6,7 @@
 | Report Kubernetes' Extension Issue on Github                         | opens a pre-populates issue on Github                |
 | New Application                                                      | Create a new application from a template             |
 | Deploy                                                               | Deploy the current application to the active cluster |
+| Continuous Deploy                                                           | Watches the application directory continuously for changes and deploys the application to the active cluster |
 | Set as Current Context                                               | Set the context for the active cluster               |
 | Remove from Context                                                  | Sets the given cluster as the current active cluster |
 | Set as Active Namespace                                              | Sets the given namespace as the current active namespace. |

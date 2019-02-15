@@ -6,6 +6,7 @@ Cloud Code for Visual Studio Code makes it easy to create a basic 2 microservice
 - Go
 - Python
 - Java
+- .Net Core
 
 these templates are a simple 2 microservice K8's application that you can rapidly test of feature set through e.g. debugging, deployment, editing support, ...
 
