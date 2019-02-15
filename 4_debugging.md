@@ -36,6 +36,8 @@ For each of these languages, [launch and attach configuration snippets](https://
 
 * The debug session should now be started!
 
+* If the configuration selected is launch and the attribute `continuous` is set to true, the extension will continuous redeploy the code and reattach the debugger whenever changes are made and saved in the code.
+
 ## Specific language requirements:
 
 ### Node.js
@@ -100,3 +102,5 @@ RUN apt-get update \
 * `localRoot`: Path to the local directory containing the program being debugged. Defaults to `${workspaceFolder}`.
 
 * `protocol`: Node.js debug protocol used. Defaults to `auto`.
+
+* `continuous`: If true, will deploy continuously. Deployments happen in the background each time a file change is detected. This is only applicable to launch (and not attach) configuration.
