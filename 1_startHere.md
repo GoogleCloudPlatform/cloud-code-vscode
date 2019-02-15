@@ -20,11 +20,7 @@ You won't get far without these - we can help but these will be base assumptions
 
 
 # Installing the extensions
-> End users will not have to do this.  This is required as we have not released the extensions yet.  We have also not finalized naming or structure.
-
-download these two extensions:
-1. [Kubernetes](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/blob/master/Extensions/kubecode-kubernetes-0.0.1.vsix?raw=true)
-2. [GKE](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/blob/master/Extensions/kubecode-gke-0.0.1.vsix?raw=true)
+Download the most up to date extensions from the [releases page](https://github.com/GoogleCloudPlatform/vscode-extensions-docs/release)
 
 From within VS Code's extension view:
 
