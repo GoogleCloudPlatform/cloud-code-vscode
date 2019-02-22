@@ -1,5 +1,8 @@
 # Welcome to Cloud Code for Visual Studio Code
 
+# Trusted Tester Agreement
+Please be sure to review the [Trusted Tester Agreement](trusted_tester_agreement.md) for using this product.
+
 # What is Cloud Code for Visual Studio Code
 
 It's an extension for VS Code that helps you easily set-up your development tool chain and deploy to a cluster with a tight edit-package-deploy loop.  It supports debugging and eases working with K8s artifacts and commands.
