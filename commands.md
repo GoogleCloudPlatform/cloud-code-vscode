@@ -3,7 +3,7 @@ In the VS Code Command Pallette you can see a set of `Cloud Code:` commands to t
 
 ![Cloud Code Commands](images/commands.gif)
 
-For more details, refer to the (Command Reference)[commandReference.md]
+For more details, refer to the [Command Reference](commandReference.md)
 
 ## Working with Logs
 

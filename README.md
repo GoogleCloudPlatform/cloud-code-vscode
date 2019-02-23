@@ -15,7 +15,7 @@ This guide is designed to highlight and core features in Cloud Code for Visual S
 
 1. Start by [setting up your machine and installing our extensions](getting_started.md)
     1. While you are getting set up tke a quick look at some [known Issues](knownIssues.md) and workarounds.
-1. Try creating a [cluster in the cloud](create_cluster.md) or a [local cluster with minikube](create_cluster.md).
+1. Try creating a [cluster in the cloud](create_cluster.md#google-kubernetes-engine) or a [local cluster with minikube](create_cluster.md#minikube-support).
 1. Create a [new Kubernetes Application](create_application.md) from our samples.
 1. [Deploy your new application](deploy.md) locally or to the cloud.
 1. [Live debug](debugging.md) your application where ever it's running.
@@ -33,7 +33,7 @@ We truly appreciate all feedback you may have about these extensions:
 * Confusing commands or flows
 * Ideas for new features
 * Expanded or more clear documentation
-* Anything that you think would improve your development experience  
+* Anything that you think would improve your development experience or these extensions
 
 ### Filling an Issue
 You can file an issue from the extension: `Cloud Code: Report Kubernetes' Extension Issue on Github`.
