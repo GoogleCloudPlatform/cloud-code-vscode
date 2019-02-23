@@ -2,6 +2,9 @@
 
 The tools you need for Cloud Native development leveraging your favorite OS, language and cloud.
 
+## Trusted Tester Agreement
+Please be sure to review the [Trusted Tester Agreement](trusted_tester_agreement.md) for using this product.
+
 ## What is Cloud Code for Visual Studio Code
 
 The goal is to provide great and opinionated developer experience for building Kubernetes and Cloud Native applications from Visual Studio Code.  We want to with all part of the developer experience.  From creating a new application, expanding that application, to deploying and live debugging it.
