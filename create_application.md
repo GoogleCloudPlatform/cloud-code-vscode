@@ -1,19 +1,23 @@
-# New Application
+# Create an Application
 
-Cloud Code for Visual Studio Code makes it easy to create a basic 2 microservice app from a set of templates.  We include templates for:
+You have the ability to create a new project for you in your language of choice.  This is a great place to start for simple demos and for this feature tour:
 
-- NodeJS
-- Go
-- Python
-- Java
-- .Net Core
+* Open the command pallette 
+* Select `Cloud Code: New Application`
+* Select the language of your choice
+    * NodeJS
+    * Go
+    * Python
+    * Java
+* Accept or change the default location
 
-these templates are a simple 2 microservice K8's application that you can rapidly test of feature set through e.g. debugging, deployment, editing support, ...
+![New Project](images/newApplication.gif)
 
+We will then generate a simple two microservice kubernetes application that will allow you to test many of our features.
 
-## Whats in a Template
+## About New Applications
 
-They all really have the same structure across all languages. We will use the NodeJS one as an example...
+All language templates have nearly the same structure. For example the NodeJS template contains:
 
 ```
 .               
@@ -37,8 +41,3 @@ They all really have the same structure across all languages. We will use the No
 ```
 
 > **Note:** This is not the only supported structure but our starting recommendation.
-
-## Changing the default location
-
-We have a setting for that.
-
