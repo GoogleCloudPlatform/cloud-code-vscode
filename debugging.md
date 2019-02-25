@@ -9,6 +9,15 @@ The Cloud Code for Visual Studio Code Extension supports Kubernetes container de
 
 For each of these languages, [launch and attach configuration snippets](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) are provided for a one-click deploying and debugging experience. See configuration attributes [section](#configuration-attributes) for the available attributes that you can used in the snippet.
 
+## Debugging an Newly Generated Application
+
+If you [created a new application with our extension](create_application.md) no extra set up is required.
+
+Once you deploy to a cluster debugging is as simple as setting a breakpoint and starting the debugger on the relevant microservice.
+
+![Debugging](images/debug.gif)
+
+
 ## General Launching and Debugging Flow
 
 * This outlines the general launching and debugging flow without going into specific requirements for each language.
