@@ -29,11 +29,11 @@ Open Dashboard - Open the kubernetes dashboard for that cluster.
 
 ## Deployments
 
-Add Secret as Environment Variable - Add an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] to the deployment as an environment variable.
+Add Secret as Environment Variable - Add an existing Kubernetes [secret](https://kubernetes.io/docs/concepts/configuration/secret/) to the deployment as an environment variable.
 
 ![Add Secret as Environment Variable](images/kubernetes-explorer/addSecretAsEnv.gif)
 
-Mount Secret as Volume - Mount an existing Kubernetes (secret)[https://kubernetes.io/docs/concepts/configuration/secret/] as a volume in the deployment's container.
+Mount Secret as Volume - Mount an existing Kubernetes [secret](https://kubernetes.io/docs/concepts/configuration/secret/) as a volume in the deployment's container.
 
 ![Mount Secret as Volume](images/kubernetes-explorer/mountSecretAsVolume.gif)
 

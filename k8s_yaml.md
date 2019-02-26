@@ -13,13 +13,13 @@ We provide snippets out of the box for common YAML schema.  These make it easy t
 
 ## YAML Completions
 
-We will provide contextual completions within a YAML file based on the current schema - we will even to provide the relevant docs to help you choose the right option.
+We will provide contextual completions within a YAML file based on the current schema - we will even provide the relevant docs to help you choose the right option.
 
 ![YAML Completions](images/YAMLsuggestAndDoc.png)
 
 ## YAML Documentation on Hover
 
-When you hover over a value we will sho the relevant docs from the schema.
+When you hover over a value we will show the relevant docs from the schema.
 
 ![YAML Hover](images/YAMLhoverDocs.png)
 

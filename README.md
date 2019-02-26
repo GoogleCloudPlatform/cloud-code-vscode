@@ -7,17 +7,17 @@ Please be sure to review the [Trusted Tester Agreement](trusted_tester_agreement
 
 ## What is Cloud Code for Visual Studio Code
 
-The goal is to provide great and opinionated developer experience for building Kubernetes and Cloud Native applications from Visual Studio Code.  We want to with all part of the developer experience.  From creating a new application, expanding that application, to deploying and live debugging it.
+The goal is to provide great and opinionated developer experience for building Kubernetes and Cloud Native applications from Visual Studio Code.  We want to help with all part of the developer experience.  From creating a new application, expanding that application, to deploying and live debugging it.
 
 In many ways the whole goal of Cloud Code for Visual Studio Code is to let you focus on your code versus needing to loose context and drop to a CLI, portal or some other tool for very common tasks.  As a result we have worked hard to ensure you can work like you normally would in VS Code.
 
 ## What Can I Do?
 
-This guide is designed to highlight and core features in Cloud Code for Visual Studio Code.  Each section has additional supporting docs linked and there is a catch-all section for cool features not sufficiently covered elsewhere.
+This guide is designed to highlight core features in Cloud Code for Visual Studio Code.  Each section has additional supporting docs linked and there is a catch-all section for cool features not sufficiently covered elsewhere.
 
 
 1. Start by [setting up your machine and installing our extensions](getting_started.md)
-    1. While you are getting set up tke a quick look at some [known Issues](knownIssues.md) and workarounds.
+    1. While you are getting set up take a quick look at some [known Issues](knownIssues.md) and workarounds.
 1. Try creating a [cluster in the cloud](create_cluster.md#google-kubernetes-engine) or a [local cluster with minikube](create_cluster.md#minikube-support).
 1. Create a [new Kubernetes Application](create_application.md) from our samples.
 1. [Deploy your new application](deploy.md) locally or to the cloud.

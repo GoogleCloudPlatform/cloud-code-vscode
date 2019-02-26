@@ -7,7 +7,7 @@ The Cloud Code for Visual Studio Code Extension supports Kubernetes container de
 * `Go`
 * `.NET Core`
 
-For each of these languages, [launch and attach configuration snippets](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) are provided for a one-click deploying and debugging experience. See configuration attributes [section](#configuration-attributes) for the available attributes that you can used in the snippet.
+For each of these languages, [launch and attach configuration snippets](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) are provided for a one-click deploying and debugging experience. See configuration attributes [section](#configuration-attributes) for the available attributes that you can use in the snippet.
 
 ## Debugging an Newly Generated Application
 

@@ -1,5 +1,5 @@
 # Command Reference
-In the VS Code Command Pallette you can see a set of `Cloud Code:` commands to try:
+In the VS Code Command Palette you can see a set of `Cloud Code:` commands to try:
 
 ![Cloud Code Commands](images/commands.gif)
 

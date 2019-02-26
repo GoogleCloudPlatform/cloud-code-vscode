@@ -3,7 +3,7 @@
 | Command                                                              | Purpose                                              |
 |----------------------------------------------------------------------|------------------------------------------------------|
 | Help                                                                 | View our welcome experience                          |
-| Report Kubernetes' Extension Issue on Github                         | opens a pre-populates issue on Github                |
+| Report Kubernetes' Extension Issue on Github                         | opens a pre-populated issue on Github                |
 | New Application                                                      | Create a new application from a template             |
 | Deploy                                                               | Deploy the current application to the active cluster |
 | Continuous Deploy                                                           | Watches the application directory continuously for changes and deploys the application to the active cluster |

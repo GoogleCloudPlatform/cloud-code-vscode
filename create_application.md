@@ -2,7 +2,7 @@
 
 You have the ability to create a new project for you in your language of choice.  This is a great place to start for simple demos and for this feature tour:
 
-* Open the command pallette 
+* Open the command palette 
 * Select `Cloud Code: New Application`
 * Select the language of your choice
     * NodeJS

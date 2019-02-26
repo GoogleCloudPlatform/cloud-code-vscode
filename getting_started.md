@@ -5,7 +5,7 @@ is properly set up.
 
 ## Hard Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) should be installed set-up on your machine.
+* [Visual Studio Code](https://code.visualstudio.com/) should be installed and set-up on your machine.
 * Language support installed and configured.  Our extension works best with these four languages:
     * NodeJS (built in to VS Code)
     * [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
@@ -34,6 +34,5 @@ The following should be installed and on the `PATH` for your machine.
 * [Skaffold](https://github.com/GoogleContainerTools/skaffold#installation)
 
 ## Google Cloud Platform and Google Kubernetes Engine Prerequisites
-
-* [gcloud](https://cloud.google.com/sdk/gcloud/) should be installed on and the `PATH`
+* [gcloud](https://cloud.google.com/sdk/gcloud/) should be installed and on the `PATH`
 * You will need to have a GCP account set up with billing.
