@@ -23,7 +23,7 @@ You can use this wizard to start/stop and get status of a Minikube cluster. It w
 2. Minikube binary is added to PATH variable or to `"cloudcode.minikubePath"` VSCode settings.
 
 ### Dashboard
-![Dashboard](images/minikube/dashboard.png)
+![Dashboard](images/minikube/dashboard.PNG)
 
 ### Starting minikube cluster
 You need to choose the VM driver that will be used to create the Minikube cluster. The current list of supported VM drivers are:
