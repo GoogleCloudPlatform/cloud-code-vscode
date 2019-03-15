@@ -11,7 +11,7 @@ is properly set up.
     * [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
     * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
     * [Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
-* Basic knowledge of VS Code and k8s are highly recommended.
+* Basic knowledge of VS Code and kubernetes are highly recommended.
 
 
 ## Installing the Extensions
