@@ -72,7 +72,7 @@ This will start the Java application in debug mode and listen on port `debugPort
 
 * The Python container also needs to have `ptvsd` module installed and your script needs to import and call `ptvsd.enable_attach` at the beginning (more instructions [here](https://github.com/Microsoft/ptvsd#enable-debugging)). The port specified in the `enable_attach` call should be the same as the port in `debugPort` attribute of the debug configuration. For example:
 ```
-CMD ["python", "-m", "ptvsd", "--port", "<debugPort>", "app.py"]
+ptvsd.enable_attach(address=('0.0.0.0', <debugPort>))
 ```
 
 ## Go
