@@ -30,5 +30,3 @@ Your use of this plugin is subject to the [Google Privacy Policy][3].
 [1]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=&template=bug_report.md&title=
 [2]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
 [3]: https://policies.google.com/privacy
-
-
