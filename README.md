@@ -17,7 +17,7 @@ This guide is designed to highlight core features in Cloud Code for Visual Studi
 
 
 1. Start by [setting up your machine and installing our extensions](getting_started.md)
-    1. While you are getting set up take a quick look at some [known Issues](knownIssues.md) and workarounds.
+    1. While you are getting set up take a quick look at the [FAQ](FAQ.md).
 1. Try creating a [cluster in the cloud](create_cluster.md#google-kubernetes-engine) or a [local cluster with minikube](create_cluster.md#minikube-support).
 1. Create a [new Kubernetes Application](create_application.md) from our samples.
 1. [Deploy your new application](deploy.md) locally or to the cloud.
