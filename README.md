@@ -9,7 +9,7 @@ Please be sure to review the [Trusted Tester Agreement](trusted_tester_agreement
 
 The goal is to provide great and opinionated developer experience for building Kubernetes and Cloud Native applications from Visual Studio Code.  We want to help with all part of the developer experience.  From creating a new application, expanding that application, to deploying and live debugging it.
 
-In many ways the whole goal of Cloud Code for Visual Studio Code is to let you focus on your code versus needing to loose context and drop to a CLI, portal or some other tool for very common tasks.  As a result we have worked hard to ensure you can work like you normally would in VS Code.
+In many ways the whole goal of Cloud Code for Visual Studio Code is to let you focus on your code versus needing to lose context and drop to a CLI, portal or some other tool for very common tasks.  As a result we have worked hard to ensure you can work like you normally would in VS Code.
 
 ## What Can I Do?
 
