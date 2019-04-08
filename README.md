@@ -46,4 +46,4 @@ and live debug in seconds!
 [9]: http://cloud.google.com/code
 [10]: http://cloud.google.com/code/docs/vscode/install
 [11]: FAQ.md
-[12]: images/app_deploy_debug.gif
+[12]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/app_deploy_debug.gif
