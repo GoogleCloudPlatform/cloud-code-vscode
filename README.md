@@ -39,11 +39,11 @@ and live debug in seconds!
 [2]: https://skaffold.dev/
 [3]: https://kubernetes.io/docs/tasks/tools/install-kubectl/
 [4]: https://skaffold.dev/docs/how-tos/profiles/
-[5]: http://cloud.google.com/code/docs/vscode
+[5]: https://cloud.google.com/code/docs/vscode
 [6]: https://github.com/GoogleCloudPlatform/cloud-code-samples
 [7]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=&template=bug_report.md&title=
 [8]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-[9]: http://cloud.google.com/code
-[10]: http://cloud.google.com/code/docs/vscode/install
+[9]: https://cloud.google.com/code
+[10]: https://cloud.google.com/code/docs/vscode/install
 [11]: FAQ.md
 [12]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/app_deploy_debug.gif
