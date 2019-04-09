@@ -14,7 +14,7 @@ easily test and debug on your workstation or in the cloud.
 Create a new application, deploy it to a remote Kubernetes cluster
 and live debug in seconds!
 
-![New App, Deploy and Debug](/images/app_deploy_debug.gif)
+![New App, Deploy and Debug][12]
 
 ## Key Features
 - Support for Go, Node, Java, and Python
