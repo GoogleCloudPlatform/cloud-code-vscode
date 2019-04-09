@@ -45,5 +45,5 @@ and live debug in seconds!
 [8]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
 [9]: http://cloud.google.com/code
 [10]: http://cloud.google.com/code/docs/vscode/install
-[11]: FAQ.md
+[11]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/blob/master/FAQ.md
 [12]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/app_deploy_debug.gif
