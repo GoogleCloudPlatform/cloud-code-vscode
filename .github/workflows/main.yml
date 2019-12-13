@@ -1,0 +1,13 @@
+on:
+  issues:
+    types: [labeled]
+jobs:
+  Coming_Soon_On_Roadmap_Project:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
+      with:
+        action-token: "${{ secrets.Roadmap_Labeler }}"
+        project-url: https://github.com/GoogleCloudPlatform/cloud-code-vscode/projects/1
+        column-name: "Coming Soon"
+        label-name: "r-coming soon"
