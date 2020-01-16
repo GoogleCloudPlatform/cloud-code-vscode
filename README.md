@@ -26,7 +26,7 @@ and live debug in seconds!
 - Profile support for dev, test and production environments
 - Cluster management, resource browsing and inspection of K8s clusters
 - Cluster creation supporting Google GKE, Amazon EKS and Azure AKS
-- Support for Custom Resources (CRDs) e.g. Istio, KNative
+- Support for Custom Resources (CRDs) e.g. Istio, Knative
 - Automatically uses your Google Cloud SDK credentials
 
 ## Resources
