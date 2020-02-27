@@ -2,6 +2,26 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.0.0
+
+We are pleased to announce that Cloud Code is now GA!
+
+### New Features
+
+* **Cloud Shell Integration** Use the ‘Open with Cloud Code’ feature to quickly get started using Google Cloud Platform. It uses a remote development environment in [Cloud Shell](https://cloud.google.com/shell/docs) which means you’ll get to skip setup and start developing with Cloud Code with the click of a button. 
+
+    With ‘Open with Cloud Code’, you can edit, run, and debug code; as well as utilize all of Cloud Code's features directly from inside Cloud Shell. Visual Studio Code's integrated terminal allows direct interaction with command line utilities running in Cloud Shell, such as the gcloud command-line tool, skaffold, and kubectl.
+
+    ![alt_text](images/cloudshell_1_0_0.gif "image_tooltip")
+
+* **YAML editing** Get started with Cloud Build with Cloud Code’s built-in snippets for Cloud Build and Cloud Build trigger YAML files.
+
+    ![alt_text](images/cloudbuild-yaml_1_0_0.gif "image_tooltip")
+
+### Notable Fixes
+
+* Added ability to view and edit yaml of Ingress resource (#158)
+
 ## Version 0.0.13
 
 ### New Features
