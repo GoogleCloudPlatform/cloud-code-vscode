@@ -2,6 +2,22 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.1.0 Release Notes
+
+### New Features
+
+* **Client Library Browser:** Manage your Google Cloud APIs with Cloud Code’s freshest new feature: the Client Library Browser. View all available Google Cloud APIs, enable an API, view API status (enabled or disabled), and install client libraries to consume an API, all from within your IDE.
+
+    ![alt_text](images/client-library-browser_1_1_0.gif "image_tooltip")
+
+* **Cloud Code: Run on Kubernetes:**
+
+    A new command, ‘Cloud Code: Run on Kubernetes,’ has been added that lets you run your kubernetes application and view it live. 'Cloud Code: Deploy' and 'Cloud Code: Continuous Deploy' commands have been deprecated in favor of this command. For more details on this change, please refer to this [link](https://cloud.google.com/code/docs/vscode/troubleshooting).
+
+    ![alt_text](images/deployment-flow_1_1_0.gif "image_tooltip")
+
+* In addition to the above features, this release also includes some bug fixes. You can view the full list [here](https://github.com/GoogleCloudPlatform/cloud-code-vscode/milestone/3).
+
 ## Version 1.0.0
 
 We are pleased to announce that Cloud Code is now GA!
