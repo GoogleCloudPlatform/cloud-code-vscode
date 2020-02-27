@@ -2,7 +2,7 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.0.0 Release Notes
+## Version 1.0.0
 
 We are pleased to announce that Cloud Code is now GA!
 
@@ -16,7 +16,7 @@ We are pleased to announce that Cloud Code is now GA!
 
 * **YAML editing** Get started with Cloud Build with Cloud Code’s built-in snippets for Cloud Build and Cloud Build trigger YAML files.
 
-![alt_text](images/cloudbuild-yaml_1_0_0.gif "image_tooltip")
+    ![alt_text](images/cloudbuild-yaml_1_0_0.gif "image_tooltip")
 
 ### Notable Fixes
 
