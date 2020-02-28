@@ -2,7 +2,15 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.1.0
+## Version 1.1.2
+
+### Notable Fixes
+
+* Fixed an issue in the "Open in Cloud Code" feature
+* Fixed an issue where logs in "Cloud Code Yaml Support" output channel will grab focus
+* Minor bug fixes
+
+## Version 1.1.1
 
 ### New Features
 
@@ -11,6 +19,8 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ### Notable Fixes
 
 * Run in Kubernetes: Cant disable the watch (#198)
+
+## Version 1.1.0
 
 ### New Features
 
