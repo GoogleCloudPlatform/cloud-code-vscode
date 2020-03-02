@@ -2,6 +2,36 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.2.0
+
+### New features
+
+* **Flexible Kubernetes YAML editing:** Edit your Kubernetes YAML with additional support for multiple Kubernetes versions.
+* **Streamlined remote development flow:** Work with Cloud Code [using a remote development environment](https://cloud.google.com/code/docs/vscode/quickstart-remote-dev), taking advantage of newly added support:
+  * Start development with just Visual Studio Code installed.
+  * Receive direct reporting on the progress of ‘Open with Cloud Code’ throughout its flow.
+  * Cancel the open any time during the operation.
+  * If an error does occur, know that it will come with actionable guidance.
+
+    ![alt_text](images/cloud-shell-new-flow_1_2_0.gif "Working with Cloud Shell")
+
+* **Cloud Code: Deploy deprecation:** ‘Cloud Code: Deploy’ and ‘Cloud Code: Continuous Deploy’ commands are [deprecated](https://cloud.google.com/code/docs/vscode/troubleshooting#how_is_the_cloud_code_run_on_kubernetes_command_different_from_cloud_code_deploy_application). While these commands continue to work, they will be removed in the next release (v1.3), targeted for the end of March.
+
+    Use ‘Cloud Code: Run on Kubernetes’ command instead.
+
+* **Improved Logs Viewer:** Make the most out of your log viewing with the following new filters:
+  * Log Type: switch between kubectl, Cloud Logging and Cloud Run logs.
+  * Cluster: switch between different clusters when viewing Cloud Logging logs. This allows you to query logs from specific clusters instead of from all of them.  For kubectl logs, this will only show the current active cluster.
+
+    ![alt_text](images/improved-logs-viewer_1_2_0.gif "Improved logs viewer")
+
+### Bug fixes
+
+* [Issue #176:](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/176) Cloud Code will no longer continually switch user context to the output window!
+* [Issue #201:](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/201) Fixed an issue where the Logs Viewer hangs when you don’t have permission to list all namespaces.
+* Fixed an issue where Open with Cloud Code would not clone a repository in some cases.
+* Fixed an issue where Cloud Shell would fail to create an SSH configuration when the gcloud command-line tool prompted for survey participation.
+
 ## Version 1.1.2
 
 ### Notable Fixes
