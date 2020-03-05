@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Environment**:
-*(Hint: "Report Kubernetes Extension Issue on Github" command will fill these out for you.)*
+*(Hint: "Report Extension Issue on Github" command will fill these out for you.)*
 Extension version:
 VSCode version:
 OS: 
