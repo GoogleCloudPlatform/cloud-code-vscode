@@ -2,6 +2,46 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.3.0 Release Notes
+
+We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in Cloud Code for VS Code!
+
+### New Features
+
+* **Cloud Run support in VS Code:** Cloud Code now makes it easy to develop and deploy your services to Cloud Run (fully managed) or Cloud Run for Anthos on GKE directly from within Visual Studio Code.  You can get started with our starter templates for Java, Node.js, Go, or Python.
+  * Browse your Cloud Run services directly from the IDE using the Cloud Run explorer. Easily see details of deployed services as well as revisions and status.
+  * Follow the [Cloud Run quickstart guide](https://cloud.google.com/code/docs/vscode/quickstart-cloud-run) to get started!
+
+  ![Cloud Run service browser and deployment flow](images/cloud-run-support_1_3_0.gif "Cloud Run service browser and deployment flow")
+
+* **Improved dependency management:** Better experience when Cloud Cloud is managing dependencies.
+  * Improved performance when installing managed dependencies.
+  * Stay up to date with the latest versions of dependencies.
+
+* **Cloud Code: Debug on Kubernetes:**  New command to debug applications with the same configuration used to [run the application](https://cloud.google.com/code/docs/vscode/running-an-application).
+  * Invoking this command will launch the application and debugs all the containers in the app.
+  * Refer to the [documentation](https://cloud.google.com/code/docs/vscode/debug) for more on this feature.
+
+  ![Debug on Kubernetes command](images/debug-on-kubernetes.gif "Debug on Kubernetes command")
+
+* **Separate views for Kubernetes, Cloud Run and APIs:** Reorganized UI to focus on the flows that matter.
+
+  ![Separate views](images/action-bar-changes_1_3_0.gif "Separate views")
+
+### Other Changes
+
+* **Dependency management:** Previously offered "On," "Off," and "Ask" as choices for managing dependency with "Ask" as the default. In the latest release we've removed the "Ask" choice with "On" as the default. Anyone who has picked "Ask" will be defaulted to "On."
+* **Deprecation of Kubernetes deploy commands:** The deprecated ‘Cloud Code: Deploy’ and ‘Cloud Code: Continuous Deploy’ have been removed. Use ‘Cloud Code: Run on Kubernetes’ command.
+
+### Bug Fixes
+
+* [#231](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/231) Add support for Google Cloud Run
+* [#227](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/227) Hanging while installing dependencies
+* [#225](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/225) Cannot start debugger for .NetCore project
+* [#224](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/224) GKE Explorer does not work in windows 10
+* [#223](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/223) Add Configuration to Existing Project is broken
+* [#203](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/203) Add a guidance message in case no Kubernetes manifest are present
+
 ## Version 1.2.1
 
 Updated the extension to be compatible with the latest version of Visual Studio code. Fixed an issue introduced by the latest update that caused specific terminal commands to hang.
