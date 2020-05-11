@@ -5,9 +5,6 @@ of IDEs to developing cloud-native Kubernetes and Cloud Run applications.
 Cloud Code works with Google’s command-line [container tools][1] like [`skaffold`][2]
 and [`kubectl`][3] under the hood, providing local, continuous feedback on your project
 as you build, edit, and run your applications on your workstation or in the cloud.
-Additionally, its support for [deployment profiles][4] lets you define different
-environments, like local development, shared development, test, and production, to
-easily test and debug your app with, locally or in the cloud.
 
 ## New App, Deploy and Debug
 
@@ -20,7 +17,6 @@ cluster, and debug your running app in seconds!
 
 - Support for Go, Node, Java, and Python
 - Integrated Debugging and Log Viewing/Streaming
-- Profile support for dev, test, and production environments
 - Cluster and service inspection with the Kubernetes and Cloud Run explorers
 - Cluster creation supporting Google GKE, Amazon EKS and Azure AKS
 - Rapid Edit, Package, Deploy loop to your K8s cluster
