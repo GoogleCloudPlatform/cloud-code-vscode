@@ -1,31 +1,26 @@
 # Cloud Code for Visual Studio Code
 
-Cloud Code for VS Code extends VS Code to bring all the power and convenience
-of IDEs to developing cloud-native Kubernetes applications. With Google’s
-command-line [container tools][1] like [`skaffold`][2] and [`kubectl`][3]
-under the hood, Cloud Code gives you local, continuous feedback on your project
-as you build it, extending this local edit-compile-debug loop to create
-cloud-native Kubernetes environments, on your workstation or in the cloud.
-Support for [deployment profiles][4] lets you define different environments,
-like local development, shared development, test, or production, so you can
-easily test and debug on your workstation or in the cloud.
+Cloud Code for VS Code brings the power and convenience
+of IDEs to developing cloud-native Kubernetes and Cloud Run applications.
+Cloud Code works with Google’s command-line [container tools][1] like [`skaffold`][2]
+and [`kubectl`][3] under the hood, providing local, continuous feedback on your project
+as you build, edit, and run your applications on your workstation or in the cloud.
 
 ## New App, Deploy and Debug
 
-Create a new application, deploy it to a remote Kubernetes cluster
-and live debug in seconds!
+With Cloud Code, you can create a new application, deploy it to a remote Kubernetes
+cluster, and debug your running app in seconds!
 
 ![New App, Deploy and Debug][12]
 
 ## Key Features
 
 - Support for Go, Node, Java, and Python
-- Rapid Edit, Package, Deploy loop to your K8s cluster
 - Integrated Debugging and Log Viewing/Streaming
-- Snippets, completions, and linting for K8s artifacts
-- Profile support for dev, test and production environments
-- Cluster management, resource browsing and inspection of K8s clusters
+- Cluster and service inspection with the Kubernetes and Cloud Run explorers
 - Cluster creation supporting Google GKE, Amazon EKS and Azure AKS
+- Rapid Edit, Package, Deploy loop to your K8s cluster
+- Snippets, completions, and linting for K8s artifacts
 - Support for Custom Resources (CRDs) e.g. Istio, Knative
 - Automatically uses your Google Cloud SDK credentials
 
