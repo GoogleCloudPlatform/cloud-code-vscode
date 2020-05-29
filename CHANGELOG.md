@@ -10,7 +10,11 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 You can now browse and switch between Kubernetes contexts as you would during your development workflow with Cloud Code. With the updated Kubernetes Explorer, it's easier to understand
 the active context associated with your current cluster and move to another if you need.
 
+  ![Managing Kubernetes Context](images/kubecontext_1_4_0.JPG "Managing Kubernetes Context")
+
 * **PersistentVolumeClaim support:** The Kubernetes Explorer will now show your cluster's PersistentVolumeClaim (PVC) resources and each PVC's status and key details.
+
+  ![PersistentVolumeClaim support](images/pvc_1_4_0.JPG "PersistentVolumeClaim support")
 
 ### Bug fixes
 
