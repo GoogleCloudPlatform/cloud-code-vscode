@@ -2,6 +2,22 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.4.0 Release Notes
+
+### New features
+
+* **Kubernetes Context Management:** Contexts are now accessible from the Kubernetes Explorer!
+You can now browse and switch between Kubernetes contexts as you would during your development workflow with Cloud Code. With the updated Kubernetes Explorer, it's easier to understand
+the active context associated with your current cluster and move to another if you need.
+
+* **PersistentVolumeClaim support:** The Kubernetes Explorer will now show your cluster's PersistentVolumeClaim (PVC) resources and each PVC's status and key details.
+
+### Bug fixes
+
+* [Issue #131:](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/131) Cloud Code will now allow you to browse and switch between Kubernetes contexts!
+* [Issue #193:](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/193)
+You can now browse PersistentVolumeClaim in the Kubernetes Explorer!
+
 ## Version 1.3.0 Release Notes
 
 We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in Cloud Code for VS Code!
