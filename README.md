@@ -46,3 +46,8 @@ cluster, and debug your running app in seconds!
 [10]: https://cloud.google.com/code/docs/vscode/install
 [11]: https://cloud.google.com/code/docs/vscode/troubleshooting
 [12]: https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/app_deploy_debug.gif
+
+## Support
+
+- To get more support on issues join our slack channel [cloud-code-ide](https://googlecloud-community.slack.com/messages/cloud-code-ide) for VSCode support.
+- To report an issue, first create a stack overflow issue and add the two tags [google-cloud-platform][cloud-code] and post the link for it in the above slack channel.
