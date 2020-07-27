@@ -49,5 +49,5 @@ cluster, and debug your running app in seconds!
 
 ## Support
 
-- To get more support on issues join our slack channel [cloud-code-ide](https://googlecloud-community.slack.com/messages/cloud-code-ide) for VSCode support.
-- To report an issue, first create a stack overflow issue and add the two tags [google-cloud-platform][cloud-code] and post the link for it in the above slack channel.
+- To get support on issues you might encounter, join our Slack channel [cloud-code-ide](https://googlecloud-community.slack.com/messages/cloud-code-ide) for Cloud Code support.
+- To report an issue, create a Stack Overflow question, and add the two tags [google-cloud-platform] and [cloud-code] to your question, and post a link to it in our Slack channel.
