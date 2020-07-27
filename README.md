@@ -49,5 +49,6 @@ cluster, and debug your running app in seconds!
 
 ## Support
 
-- To get support on issues you might encounter, join our Slack channel [cloud-code-ide](https://googlecloud-community.slack.com/messages/cloud-code-ide) for Cloud Code support.
-- To report an issue, create a Stack Overflow question, and add the two tags [google-cloud-platform] and [cloud-code] to your question, and post a link to it in our Slack channel.
+- Join our community of users using Slack channel [cloud-code-ide](https://googlecloud-community.slack.com/messages/cloud-code-ide) for Cloud Code support and outreach.
+- To report any bug or task on the product, continue to use github issues, which will be triaged internally and updated.
+- If you are not sure of it is either a bug or product ask, to reach out to cloud code users community, create a Stack Overflow question, and add the two tags [google-cloud-platform] and [cloud-code] to your question, and post a link to it in our Slack channel.
