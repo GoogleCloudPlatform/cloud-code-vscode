@@ -187,14 +187,14 @@ We are pleased to announce that Cloud Code is now GA!
 
     ![alt_text](images/dependency_installer_0_0_13.png "Dependency installer")
 
-* **YAML Editing **Create and modify YAML with Cloud Code’s richer YAML editing experience for these configuration types:
+* **YAML Editing** Create and modify YAML with Cloud Code’s richer YAML editing experience for these configuration types:
   * Anthos Config Management ([link](https://cloud.google.com/anthos-config-management/docs/how-to/configs))
   * Config Connector ([link](https://cloud.google.com/config-connector/docs/overview))
   * Migrate for Anthos ([link](https://cloud.google.com/migrate/anthos/docs/yaml-reference))
 
     ![alt_text](images/migrate_for_anthos_0_0_13.gif "Migrate for Anthos YAML editing")
 
-* **Colorized Streams **Deployment and Continuous Deployment output streams will be colorized to highlight key events.
+* **Colorized Streams** Deployment and Continuous Deployment output streams will be colorized to highlight key events.
 
     ![alt_text](images/colorized_streams_0_0_13.gif "Colorized logs view")
 
