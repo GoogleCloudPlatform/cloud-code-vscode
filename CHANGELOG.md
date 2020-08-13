@@ -2,30 +2,6 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.5.0 Release Notes
-
-### New Features
-
-* **Cloud Run local development:** Develop Cloud Run applications locally using Minikube clusters with the newly added
-Run and Debug on Cloud Run Emulator commands.
-
-  ![Cloud Run Local Development](images/cloud-run-local-dev_1_5_0.gif "Cloud Run Local Development")
-
-* **Expanded CRD support:** Cloud Code has been expanded to support validation, hover documentation, and code
-completions for hundreds of popular Kubernetes Custom Resources.
-
-  ![Expanded CRD Support](images/popular-crd-support_1_5_0.gif "Expanded CRD Support")
-
-* **Buildpacks support:** In addition to Docker, you can now build your images with Google Cloud buildpacks.
-
-  ![Buildpacks Support](images/buildpacks_1_5_0.gif "Buildpacks Support")
-
-* **Auto generate configuration experience for existing K8s apps:** The UI that helps auto generate configuration for
-an existing app moving in to using Cloud Code extensions now supports specifying all available build and
-configuration settings.
-
-  ![Generate Kubernetes Configuration](images/bootstrap_kubernetes_1_5_0.gif "Generate Kubernetes Configuration")
-
 ## Version 1.4.0 Release Notes
 
 ### New features
