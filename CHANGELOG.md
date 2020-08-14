@@ -26,6 +26,10 @@ configuration settings.
 
   ![Generate Kubernetes Configuration](images/bootstrap_kubernetes_1_5_0.gif "Generate Kubernetes Configuration")
 
+* **Improved New Application UI:** Creating a new application now uses the system file picker to choose the location of the new files.
+
+  ![Generate App With System File Picker](images/create_k8s_app_1_5_0.gif "Generate App With System File Picker")
+
 ## Version 1.4.0 Release Notes
 
 ### New features
