@@ -2,6 +2,20 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.6.0 Release Notes
+
+### New Features
+
+* **Improved performance:** Reduced load times for populating the GKE explorer (from  about a 12 second load time to under 5 seconds!); logging out or switching accounts is now a much faster experience.
+
+* **Kubernetes run/debug bootstrapping improvements:** Cloud Code now helps you set an active context at the start of a run or debug session to help you get your Kubernetes application deployed quickly. If you don’t have any contexts, Cloud Code helps you create one.
+
+  ![Kubernetes run/debug bootstrapping improvements](images/run-debug-no-contexts_1_6_0.gif "Kubernetes run/debug bootstrapping improvements")
+
+* **Auto-start minikube:** Cloud Code now manages minikube more proactively. When running/debugging on a minikube cluster that is paused or stopped, Cloud Code automatically starts the cluster at the beginning of the session and pauses it when you’re done.
+
+  ![Auto-start minikube](images/auto-start-minikube_1_6_0.gif "Auto-start minikube")
+
 ## Version 1.5.0 Release Notes
 
 ### New Features
