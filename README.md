@@ -16,13 +16,17 @@ cluster, and debug your running app in seconds!
 ## Key Features
 
 - Support for Go, Node, Java, and Python
-- Integrated Debugging and Log Viewing/Streaming
-- Cluster and service inspection with the Kubernetes and Cloud Run explorers
-- Cluster creation supporting Google GKE, Amazon EKS and Azure AKS
-- Rapid Edit, Package, Deploy loop to your K8s cluster
+- Rapid Edit, Package, Run loop to your K8s cluster
+- Integrated debugging and log viewing/streaming
 - Snippets, completions, and linting for K8s artifacts
+- Cluster management, resource browsing, and K8s cluster inspection
+- Cluster creation support for Amazon EKS, Azure AKS and Google GKE
 - Support for Custom Resources (CRDs) e.g. Istio, Knative
+- Deploy, service browsing and log viewing support for Cloud Run fully managed and Cloud Run for Anthos
+- Managing Cloud API and Libraries
+- Support for Buildpacks
 - Automatically uses your Google Cloud SDK credentials
+- Google Secret Manager integration: Create secrets in the IDE and access them from your code to keep your apps secure.
 
 ## Resources
 
