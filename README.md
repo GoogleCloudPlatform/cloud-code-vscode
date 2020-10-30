@@ -29,6 +29,11 @@ applications.
 
 ![Secret Manager][15]
 
+## Use Google Cloud buildpacks
+
+With Cloud Code you can focus on building your application, not containerizing it by using Google Cloud buildpacks.
+Easily deploy your code directly to GKE or Cloud Run without worrying about a Dockerfile.
+
 ## Key Features
 
 - Support for Go, Node, Java, and Python
