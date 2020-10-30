@@ -8,19 +8,24 @@ Google Cloud resources while running on Kubernetes and emulated Cloud Run locall
 
 ## App, Deploy and Debug
 
-With Cloud Code, you can create a new Kubernetes or Cloud Run application, deploy it to a locally or remotely in seconds with live updates as you write code.  Or you can seamlessly debug Cloud Run applications locally as well as Kubernetes applications both locally and remotely.
+With Cloud Code, you can create a new Kubernetes or Cloud Run application, deploy it to a locally or remotely in
+seconds with live updates as you write code. Or you can seamlessly debug Cloud Run applications locally as well as
+Kubernetes applications both locally and remotely.
 
 ![New App, Deploy and Debug][12]
 
 ## Google Cloud API library browser
 
-Cloud Code allows you to find Google Cloud APIs without leaving your IDE and breaking your development flow.  Easily add these APIs to your project and discover more with our API library browser.
+Cloud Code allows you to find Google Cloud APIs without leaving your IDE and breaking your development flow. Easily
+add these APIs to your project and discover more with our API library browser.
 
 ![Client Library Explorer][14]
 
 ## Manage your secrets with Secrets Manager
 
-With Cloud Code get the convenience of managing your application secrets directly in VS Code.  Quickly connect to Google Cloud when running in your IDE locally even while debugging or testing your Kubernetes and Cloud Run applications.
+With Cloud Code get the convenience of managing your application secrets directly in VS Code. Quickly connect to
+Google Cloud when running in your IDE locally even while debugging or testing your Kubernetes and Cloud Run
+applications.
 
 ![Secret Manager][15]
 
