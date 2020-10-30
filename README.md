@@ -46,6 +46,7 @@ Easily deploy your code directly to GKE or Cloud Run without worrying about a Do
 - Automatically uses your Google Cloud SDK credentials even when using Kubernetes and Cloud Run locally
 - Easily find and manage Google Cloud APIs using the Library Explorer
 - Manage your secrets using Secret Manager
+- Integrated with Google Cloud buildpacks
 
 ## Resources
 
