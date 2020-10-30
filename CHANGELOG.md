@@ -20,8 +20,6 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
   * Deploy Cloud Run services from your IDE to these newly added regions. View the full supported list [here](https://cloud.google.com/run/docs/locations).
 
-  * Allocate up to 4 vCPUs to container instances with the increased limit.
-
   * Allocate up to 4GiB of memory to your services with the increased quota.
 
 ### Fixes
