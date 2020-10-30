@@ -31,8 +31,8 @@ applications.
 
 ## Use Google Cloud buildpacks
 
-With Cloud Code you can focus on building your application, not containerizing it by using Google Cloud buildpacks.
-Easily deploy your code directly to GKE or Cloud Run without worrying about a Dockerfile.
+With Cloud Code and its built-in support for Google Cloud Buildpacks, you can focus on building your application, not
+containerizing it. Easily deploy your code directly to Kubernetes or Cloud Run without worrying about a Dockerfile.
 
 ## Key Features
 
