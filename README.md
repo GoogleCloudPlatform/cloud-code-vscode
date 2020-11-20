@@ -36,6 +36,8 @@ containerizing it. Easily deploy your code directly to Kubernetes or Cloud Run w
 
 ## Key Features
 
+** Please fill out our fast 6-question survey so that we can learn how you use [IDE Plugins][16], and what improvements we should make. Thank you! **
+
 - Support for Go, Node, Java, and Python
 - Integrated Debugging and Log Viewing/Streaming
 - Cluster and service inspection with the Kubernetes and Cloud Run explorers
@@ -74,3 +76,4 @@ containerizing it. Easily deploy your code directly to Kubernetes or Cloud Run w
 [13]: https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg
 [14]: https://www.gstatic.com/cloudssh/cloudcode/client-library-browser.gif
 [15]: https://www.gstatic.com/cloudssh/cloudcode/secret-manager-explorer.png
+[16]: https://forms.gle/kGTbYGoTMj3o9rnJ8
