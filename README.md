@@ -4,16 +4,6 @@ Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native 
 
 ![E2E workflow](https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/cloud-code-quick-deploy.gif)
 
-List of Supported Services
-- Kubernetes & Google Kubernetes Engine
-- Cloud Run 
-- Secret Manager
-- Cloud APIs 
-- Cloud Logging 
-- Cloud Build 
-- Kubernetes Config Connector
-- Migrate for Anthos
-
 # Key Features
 
 ## Supporting your development workflow
@@ -25,6 +15,8 @@ Get run-ready samples, out-of-the-box configuration snippets, support for key Go
   
   ### Highlights:
   - Pick your preferred language with Cloud Code’s support for Go, Java, Node.js, Python, .NET Core app development.
+  - Get straight to developing with Cloud Code’s simplified authentication workflow that uses your Google Cloud credentials.
+  - Monitor your app with streaming logs and customize the output with additional filters to produce results meaningful to you.
 </details>
 
 ## Kubernetes development
@@ -35,7 +27,7 @@ Create and run a new app in minutes with Cloud Code’s Kubernetes support. Or w
   <summary>Read more</summary>
 
   ### Highlights:
-  - Get started with in-built ready-to-run starter Kubernetes apps for your favorite languages and frameworks. [Read the docs](https://cloud.google.com/code/docs/vscode/creating-an-application)
+  - Get started with built-in ready-to-run starter Kubernetes apps for your favorite languages and frameworks. [Read the docs](https://cloud.google.com/code/docs/vscode/creating-an-application)
   - Maintain an efficient development workflow with Cloud Code’s rapid edit, package, and deploy to cluster loop; see your edits reflected in your app in real-time! [Read the docs](https://cloud.google.com/code/docs/vscode/running-an-application)
   - Browse and manage your  Kubernetes resources from within your IDE with the Kubernetes Explorer. Just right-click and select an available action for your resource, no complex CLI commands necessary. [Read the docs](https://cloud.google.com/code/docs/vscode/using-the-kubernetes-explorer)
   - Create a remote Kubernetes cluster with Google Kubernetes Engine, EKS, or AKS, or work with a local cluster, either the integrated minikube cluster or a Docker Desktop local cluster, to run your app. [Read the docs](https://cloud.google.com/code/docs/vscode/adding-a-cluster)
@@ -64,12 +56,6 @@ Protect sensitive information and keep your app secure with Cloud Code’s integ
 
 ## Google Cloud APIs at your fingertip
 Browse available Cloud APIs, enable services, and install and learn how to integrate client libraries in your app without leaving your IDE and breaking your development flow, all with the API library browser. [Read the docs](https://cloud.google.com/code/docs/vscode/client-libraries)
-
-- Get straight to developing with Cloud Code’s simplified authentication workflow that uses your Google Cloud credentials.
-
-## Cloud Logging
-
-- Monitor your app with streaming logs and customize the output with additional filters to produce results meaningful to you. [Read the docs](https://cloud.google.com/code/docs/vscode/logging)
 
 # Resources
 
