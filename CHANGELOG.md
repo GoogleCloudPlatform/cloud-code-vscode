@@ -8,10 +8,10 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 * **Project Selection Flows**: The project selector has been refreshed to deliver an improved UX, faster load times, and recent projects listed first. The project selection/login/logout should sync between all webviews and explorers.
 
-![Secret manager explorer view](https://www.gstatic.com/cloudssh/cloudcode/mru-project-selection.gif)
+![project selection flows](https://www.gstatic.com/cloudssh/cloudcode/mru-project-selection.gif)
 
 * **Refresh GKE Explorer**: The look and feel of the GKE Explorer is now consistent with the Secret Manager Explorer and the Cloud Run Explorer.
-* **YAML Editing Support**: YAML editing support can now accurately be limited to a subdirectory under the working directory by setting `cloudcode.yaml.yamlFileMatcher`.
+* **YAML Editing Support**: YAML editing support can now accurately be limited to a subdirectory under the working directory by setting `cloudcode.yaml.yamlFileMatcher`. [Learn more](https://cloud.google.com/code/docs/vscode/yaml-editing)
 
 ### Updates
 * Replace general icons with VSCode Codicons for commands.
