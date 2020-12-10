@@ -2,7 +2,27 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-### New Features
+## Version 1.7.1 Release Notes
+
+### New Features 
+
+* **Project Selection Flows**: The project selector has been refreshed to deliver an improved UX, faster load times, and recent projects listed first. The project selection/login/logout should sync between all webviews and explorers.
+
+![Secret manager explorer view](https://www.gstatic.com/cloudssh/cloudcode/mru-project-selection.gif)
+
+* **Refresh GKE Explorer**: The look and feel of the GKE Explorer is now consistent with the Secret Manager Explorer and the Cloud Run Explorer.
+* **YAML Editing Support**: YAML editing support can now accurately be limited to a subdirectory under the working directory by setting `cloudcode.yaml.yamlFileMatcher`.
+
+### Updates
+* Replace general icons with VSCode Codicons for commands.
+* Improved Cloud Run (fully managed) support:
+  * Allocate up to 4 vCPUs to container instances with the increased limit.
+
+### Fixes 
+* [#292](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/292) Fix .NET debugging fails to open a source file when the breakpoint is hit.
+* [#239](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/239) Refresh AKS cluster UI after modifying the active subscription.
+
+## Version 1.7.0 Release Notes
 
 * **Secret Manager Support:** Many applications require credentials to connect to a database, API keys to invoke a service, or certificates for authentication. Cloud Code now integrates with Google Cloud's Secret Manager to make it easy to create, view, update, and use secrets from within your IDE so you can keep this sensitive data out of your codebase and keep your applications secure.  Get started today by viewing secrets, creating a new secret, or add secret manager API support to your code.   You can learn more about Secret Manager support from [the Cloud Code Secret Manager documentation](https://cloud.google.com/code/docs/vscode/secret-manager).
 
