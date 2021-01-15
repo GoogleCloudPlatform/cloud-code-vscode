@@ -2,6 +2,12 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.7.2 Release Notes
+
+### Fixes 
+* [Issue #362](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/362) Fixes an issue where environmental path delimiter can invalidate the path on Windows.
+* Fixes an issue where Cloud SDK sometimes gets corrupted on Windows since there is reentry while installing dependencies.
+
 ## Version 1.7.1 Release Notes
 
 ### New Features 
