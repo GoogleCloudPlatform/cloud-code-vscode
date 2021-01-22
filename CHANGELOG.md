@@ -157,12 +157,12 @@ We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in 
 * Add Configuration to Existing Project is broken. [#223](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/223)
 * Add a guidance message in case no Kubernetes manifest are present. [#203](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/203) 
 
-## Version 1.2.1: March 25, 2020
+## Version 1.2.1 (March 25, 2020)
 
 Updated the extension to be compatible with the latest version of Visual Studio code. Fixed an issue introduced by the latest update that caused specific terminal commands to hang.
 
 
-## Version 1.2.0: March 02, 2020
+## Version 1.2.0 (March 02, 2020)
 
 ### New features
 
@@ -192,7 +192,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 * Fixed an issue where Open with Cloud Code would not clone a repository in some cases.
 * Fixed an issue where Cloud Shell would fail to create an SSH configuration when the gcloud command-line tool prompted for survey participation.
 
-## Version 1.1.2: Feb 27, 2020
+## Version 1.1.2 (Feb 27, 2020)
 
 ### Notable Fixes
 
@@ -200,7 +200,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 * Fixed an issue where logs in "Cloud Code Yaml Support" output channel will grab focus
 * Minor bug fixes
 
-## Version 1.1.1: Feb 27, 2020
+## Version 1.1.1 (February 27, 2020)
 
 ### New Features
 
@@ -210,7 +210,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 
 * Run in Kubernetes: Cant disable the watch (#198)
 
-## Version 1.1.0
+## Version 1.1.0 (January 30, 2020)
 
 ### New Features
 
@@ -226,7 +226,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 
 * In addition to the above features, this release also includes some bug fixes. You can view the full list [here](https://github.com/GoogleCloudPlatform/cloud-code-vscode/milestone/3).
 
-## Version 1.0.0
+## Version 1.0.0 (November 21, 2019)
 
 We are pleased to announce that Cloud Code is now GA!
 
@@ -246,7 +246,7 @@ We are pleased to announce that Cloud Code is now GA!
 
 * Added ability to view and edit yaml of Ingress resource. [#158](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/158)
 
-## Version 0.0.13
+## Version 0.0.13 (November 7, 2019)
 
 ### New Features
 
