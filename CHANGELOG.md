@@ -27,11 +27,11 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### Bug Fixes
 * Fixed Cloud SDK auto dependency installation corruption issue on Windows. [#346](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/346)
-* Fixed Python enabling to debug external sources. [#328]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/328))
-* Fixed YAML outline to handle arrays of objects. [#339]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/339))
-* Fixed available cluster listing when faced with restricted project permissions. [#318]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/318))
-* Fixed docs for Cloud Run service config, discovering logs, stopping the emulator. [#298]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/298))
-* Fixed an issue where installation of minikube is not required for deploying to Kubernetes cluster. [#280]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/280))
+* Fixed Python enabling to debug external sources. [#328](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/328)
+* Fixed YAML outline to handle arrays of objects. [#339](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/339)
+* Fixed available cluster listing when faced with restricted project permissions. [#318](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/318)
+* Fixed docs for Cloud Run service config, discovering logs, stopping the emulator. [#298](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/298)
+* Fixed an issue where installation of minikube is not required for deploying to Kubernetes cluster. [#280](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/280)
 * Fixed an issue to display deployment progress failures on the right side status bar.
 * Fixed an issue that allows users to switch accounts without running into permission requests on older accounts.
 
