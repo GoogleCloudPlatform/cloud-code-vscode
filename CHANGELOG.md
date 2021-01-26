@@ -2,6 +2,40 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.8.0 (January 26, 2021)
+
+### New Features
+* **Custom templates:** You can now create applications from custom templates! Cloud Code offers the option of importing a Git template repository so that teams can get started quickly from a standard set of starter applications, services, and infrastructure configuration best suited to teams’ organizational policies. To read more about templates and how to get started, head over to [setting up a template repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo) guide.
+
+![custom templates](https://www.gstatic.com/cloudssh/cloudcode/contextual-status-bar.png)
+* **Cloud Code Status Bar options:** Discover more about your currently active sessions with these additions to the Cloud Code status bar.
+  * **Open Service URL:** Instead of scrolling through the logs to find the service URL, you can now open the application service URL in a web browser directly from the status bar.
+  * **Open Deployment Logs:** Open the application logs with the Cloud Code Logs Viewer. This populates the necessary filters in the Logs Viewer for the selected deployment.
+  * **Turn on/off Watch Mode:** Toggle watch mode (not available for debug session currently). This allows you to turn on/off watch mode for the current active run session without stopping, changing the launch.json `watch` field, and redeploying. Note that this toggle only affects the current session and not subsequent ones.
+
+![status bar options](https://www.gstatic.com/cloudssh/cloudcode/custom-templates.png)
+
+* **New sample application READMEs:** When you create a new sample application with Cloud Code, the new README gives updated guidance on next steps to help you get more out of Cloud Code.
+
+![new sample application READMEs](https://www.gstatic.com/cloudssh/cloudcode/vscode-readme.png)
+
+### Updates
+* **.NET launch debugging support:** In addition to the attach configuration, Cloud Code now supports a launch configuration for .NET. You can now deploy and attach to a .NET application with a single configuration.
+* **New home for Cloud Run properties:** Cloud Run properties no longer show up in a separate view. They can be found conveniently in the Cloud Run Explorer under **Properties**.
+
+![new sample application READMEs](https://www.gstatic.com/cloudssh/cloudcode/cr-explorer-properties.png)
+
+### Bug Fixes
+* Fixed Cloud SDK auto dependency installation corruption issue on Windows. [#346](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/346)
+* Fixed Python enabling to debug external sources. [#328]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/328))
+* Fixed YAML outline to handle arrays of objects. [#339]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/339))
+* Fixed available cluster listing when faced with restricted project permissions. [#318]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/318))
+* Fixed docs for Cloud Run service config, discovering logs, stopping the emulator. [#298]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/298))
+* Fixed an issue where installation of minikube is not required for deploying to Kubernetes cluster. [#280]((https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/280))
+* Fixed an issue to display deployment progress failures on the right side status bar.
+* Fixed an issue that allows users to switch accounts without running into permission requests on older accounts.
+
+
 ## Version 1.7.2 (January 15, 2021)
 
 ### Bug Fixes 
