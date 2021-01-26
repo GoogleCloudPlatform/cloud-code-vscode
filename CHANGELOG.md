@@ -8,6 +8,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * **Custom templates:** You can now create applications from custom templates! Cloud Code offers the option of importing a Git template repository so that teams can get started quickly from a standard set of starter applications, services, and infrastructure configuration best suited to teams’ organizational policies. To read more about templates and how to get started, head over to [setting up a template repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo) guide.
 
 ![custom templates](https://www.gstatic.com/cloudssh/cloudcode/contextual-status-bar.png)
+
 * **Cloud Code Status Bar options:** Discover more about your currently active sessions with these additions to the Cloud Code status bar.
   * **Open Service URL:** Instead of scrolling through the logs to find the service URL, you can now open the application service URL in a web browser directly from the status bar.
   * **Open Deployment Logs:** Open the application logs with the Cloud Code Logs Viewer. This populates the necessary filters in the Logs Viewer for the selected deployment.
@@ -34,7 +35,6 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Fixed an issue where installation of minikube is not required for deploying to Kubernetes cluster. [#280](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/280)
 * Fixed an issue to display deployment progress failures on the right side status bar.
 * Fixed an issue that allows users to switch accounts without running into permission requests on older accounts.
-
 
 ## Version 1.7.2 (January 15, 2021)
 
