@@ -12,7 +12,7 @@ Get run-ready samples, out-of-the-box configuration snippets, support for key Go
 
 <details>
   <summary>Read more</summary>
-  
+
   ### Highlights:
   - Pick your preferred language with Cloud Code’s support for Go, Java, Node.js, Python, .NET Core app development.
   - Get straight to developing with Cloud Code’s simplified authentication workflow that uses your Google Cloud credentials.
