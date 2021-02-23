@@ -2,6 +2,18 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.9.0 (February 24, 2021)
+
+### New Features
+* **GKE Autopilot:** You can now deploy your application to GKE Autopilot right from VSCode Cloud Code menu. GKE Autopilot is a new mode of operation of GKE clusters where infrastructure is auto managed by Google, provides auto provisioning and auto scaling of GKE infra to the end user. Overview of [GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview).
+* **Pre-release Channel:** You can now use insider builds for trying out upcoming features and give us feedback before they are publicly released. You can go to cloud code settings “Cloud Code: Update Channel” and select an insider build that you want to try out. This will help us to make sure your development tools aren’t affected by the release of Cloud Code Plugin.
+
+![pre-release checkbox](https://www.gstatic.com/cloudssh/cloudcode/prerelease-in-welcome-page.png)
+
+### Bug Fixes
+* Fixed to avoid checking for dependencies while deploying to K8 if deps are not auto managed. [#375](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/375)
+* Fixed broken link to browse launch.json config in the output window of deployment logs.
+
 ## Version 1.8.0 (January 26, 2021)
 
 ### New Features
