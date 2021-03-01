@@ -13,11 +13,16 @@ assignees: ''
 
 **Version information**
 
-Extension version:
+Cloud Code Extension version:
+
 VSCode version:
+
 OS: 
+
 Cloud SDK:
+
 Skaffold: 
+
 Kubectl:
 
 **Description**:
