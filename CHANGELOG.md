@@ -2,7 +2,7 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.9.0 (February 24, 2021)
+## Version 1.9.0 (February 2021)
 
 ### New Features
 * **GKE Autopilot:** You can now deploy your application to GKE Autopilot right from VSCode Cloud Code menu. GKE Autopilot is a new mode of operation of GKE clusters where infrastructure is auto managed by Google, provides auto provisioning and auto scaling of GKE infra to the end user. Overview of [GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview).
@@ -14,7 +14,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Fixed to avoid checking for dependencies while deploying to K8 if deps are not auto managed. [#375](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/375)
 * Fixed broken link to browse launch.json config in the output window of deployment logs.
 
-## Version 1.8.0 (January 26, 2021)
+## Version 1.8.0 (January 2021)
 
 ### New Features
 * **Custom templates:** You can now create applications from custom templates! Cloud Code offers the option of importing a Git template repository so that teams can get started quickly from a standard set of starter applications, services, and infrastructure configuration best suited to teams’ organizational policies. To read more about templates and how to get started, head over to [setting up a template repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo) guide.
@@ -48,13 +48,13 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Fixed an issue to display deployment progress failures on the right side status bar.
 * Fixed an issue that allows users to switch accounts without running into permission requests on older accounts.
 
-## Version 1.7.2 (January 15, 2021)
+## Version 1.7.2 (January 2021)
 
 ### Bug Fixes 
 * Fix an issue where dependencies path gets invalidated on Windows. [#362](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/362) 
 * Fix an issue where Cloud SDK in the path gets corrupted on Windows since there is reentry while installing dependencies. [#347](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/347)
 
-## Version 1.7.1 (December 09, 2020)
+## Version 1.7.1 (December 2020)
 
 ### New Features 
 
@@ -74,7 +74,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Fix .NET debugging fails to open a source file when the breakpoint is hit. [#292](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/292) 
 * Refresh AKS cluster UI after modifying the active subscription. [#239](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/239)
 
-## Version 1.7.0 (October 30, 2020)
+## Version 1.7.0 (October 2020)
 
 * **Secret Manager Support:** Many applications require credentials to connect to a database, API keys to invoke a service, or certificates for authentication. Cloud Code now integrates with Google Cloud's Secret Manager to make it easy to create, view, update, and use secrets from within your IDE so you can keep this sensitive data out of your codebase and keep your applications secure.  Get started today by viewing secrets, creating a new secret, or add secret manager API support to your code.   You can learn more about Secret Manager support from [the Cloud Code Secret Manager documentation](https://cloud.google.com/code/docs/vscode/secret-manager).
 
@@ -102,7 +102,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 * Regions are not available when I use "Deploy to Cloud Run". [#314](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/314)
 
-## Version 1.6.0 (Septemeber 29, 2020)
+## Version 1.6.0 (Septemeber 2020)
 
 ### New Features
 
@@ -116,7 +116,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
   ![Auto-start minikube](images/auto-start-minikube_1_6_0.gif "Auto-start minikube")
 
-## Version 1.5.0 (August 18, 2020)
+## Version 1.5.0 (August 2020)
 
 ### New Features
 
@@ -144,7 +144,7 @@ configuration settings.
 
   ![Generate App With System File Picker](images/create_k8s_app_1_5_0.gif "Generate App With System File Picker")
 
-## Version 1.4.0 (May 29, 2020)
+## Version 1.4.0 (May 2020)
 
 ### New features
 
@@ -163,7 +163,7 @@ the active context associated with your current cluster and move to another if y
 * Cloud Code will now allow you to browse and switch between Kubernetes contexts. [#131](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/131) 
 * You can now browse PersistentVolumeClaim in the Kubernetes Explorer. [#193](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/193)
 
-## Version 1.3.0 (May 8, 2020)
+## Version 1.3.0 (April 2020)
 
 We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in Cloud Code for VS Code!
 
@@ -203,12 +203,12 @@ We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in 
 * Add Configuration to Existing Project is broken. [#223](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/223)
 * Add a guidance message in case no Kubernetes manifest are present. [#203](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/203) 
 
-## Version 1.2.1 (March 25, 2020)
+## Version 1.2.1 (March 2020)
 
 Updated the extension to be compatible with the latest version of Visual Studio code. Fixed an issue introduced by the latest update that caused specific terminal commands to hang.
 
 
-## Version 1.2.0 (March 02, 2020)
+## Version 1.2.0 (February 2020)
 
 ### New features
 
@@ -238,7 +238,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 * Fixed an issue where Open with Cloud Code would not clone a repository in some cases.
 * Fixed an issue where Cloud Shell would fail to create an SSH configuration when the gcloud command-line tool prompted for survey participation.
 
-## Version 1.1.2 (Feb 27, 2020)
+## Version 1.1.2 (February 2020)
 
 ### Notable Fixes
 
@@ -246,7 +246,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 * Fixed an issue where logs in "Cloud Code Yaml Support" output channel will grab focus
 * Minor bug fixes
 
-## Version 1.1.1 (February 27, 2020)
+## Version 1.1.1 (February 2020)
 
 ### New Features
 
@@ -256,7 +256,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 
 * Run in Kubernetes: Cant disable the watch (#198)
 
-## Version 1.1.0 (January 30, 2020)
+## Version 1.1.0 (January 2020)
 
 ### New Features
 
@@ -272,7 +272,7 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 
 * In addition to the above features, this release also includes some bug fixes. You can view the full list [here](https://github.com/GoogleCloudPlatform/cloud-code-vscode/milestone/3).
 
-## Version 1.0.0 (November 21, 2019)
+## Version 1.0.0 (November 2019)
 
 We are pleased to announce that Cloud Code is now GA!
 
@@ -292,7 +292,7 @@ We are pleased to announce that Cloud Code is now GA!
 
 * Added ability to view and edit yaml of Ingress resource. [#158](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/158)
 
-## Version 0.0.13 (November 7, 2019)
+## Version 0.0.13 (November 2019)
 
 ### New Features
 
