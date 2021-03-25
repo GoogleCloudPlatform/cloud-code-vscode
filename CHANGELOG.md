@@ -17,7 +17,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ![dry-run](https://www.gstatic.com/cloudssh/cloudcode/dry-run.png)
 
 ### Bug Fixes
-* Fixed passing environment variables to skaffold.yaml for customizing build arguments. [#394](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/394)
+* Fixed passing environment variables to skaffold.yaml for customizing build arguments. [#394](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/394), [#378](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/378)
 * Fixed the ability to specify skaffold tags (like docker image tags) through launch config for customization. [#335](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/335)
 * Fixed skaffold workspace to support config from non-root directory. [#377](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/377)
 * Fixed the need to avoid specifying service/container name when Cloud Run is running on an emulator. [#295](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/295)
