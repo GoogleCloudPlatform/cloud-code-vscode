@@ -2,6 +2,27 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.10.0 (March 2021)
+
+### New Features
+* **GKE Autopilot Cluster Creation:** You can now create [GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview) clusters with the Cluster Creation wizard for a more managed mode of operation, taking advantage of Autopilot’s auto-provisioning and autoscaling of GKE infrastructure. For more details on how to configure your cluster, see the [Adding a cluster](https://cloud.google.com/code/docs/vscode/adding-a-cluster#creating_or_using_an_existing_kubernetes_cluster_with_gke) guide.
+
+![autopilot cluster creation](https://www.gstatic.com/cloudssh/cloudcode/gke-autopilot-cluster-creation.png)
+
+* **Initial support for M1-based Apple Silicon Macs:** With this update, you can now build and work locally on your M1 Mac with Cloud Code, minikube, and Skaffold for ARM64 targets. Please note that [Rosetta 2](https://support.apple.com/en-us/HT211861) is currently required as several dependencies are still x86/64 only, refer to [instructions](https://cloud.google.com/code/docs/vscode/arm). Follow this [GitHub issue](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/390) for more information and to track the latest updates.
+
+### Updates
+* **Dry-run YAML Files:** Perform a dry run of your configuration and check its validity using the newly added dry-run command (with either client-side or server-side validation). Dry-run evaluates the resource request without persisting objects to storage, and displays the validation result as a toast notification. To discover more commands to help with editing your configuration files, see the [YAML editing](https://cloud.google.com/code/docs/vscode/yaml-editing#performing_a_dry-run_of_a_yaml_file) guide.
+
+![dry-run](https://www.gstatic.com/cloudssh/cloudcode/dry-run.png)
+
+### Bug Fixes
+* Fixed passing environment variables to skaffold.yaml for customizing build arguments. [#394](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/394), [#378](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/378)
+* Fixed the ability to specify skaffold tags (like docker image tags) through launch config for customization. [#335](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/335)
+* Fixed skaffold workspace to support config from non-root directory. [#377](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/377)
+* Fixed the need to avoid specifying service/container name when Cloud Run is running on an emulator. [#295](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/295)
+* Fixed an issue where the insiders build gave an inactionable error message on network failures. [#404](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/404)
+
 ## Version 1.9.0 (February 2021)
 
 ### New Features
