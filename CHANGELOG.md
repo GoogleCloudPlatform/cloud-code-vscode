@@ -2,6 +2,22 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.11.0 (April 2021)
+
+### Updates
+* **Updated Explorer setup experience:** Explorers that require any setup steps now guide you through the process of logging in, selecting a project, and enabling any required APIs in a more interactive and friendly way.
+* **Streamlined Explorer views:** Secret values in Secret Tree View and ConfigMaps’ values in Kubernetes Explorer are now accessible in read-only (instead of editable) documents.
+* **Enhanced minikube management:** Multi-step quick pick menu for minikube now comes with cancel and back buttons for easy navigation.
+* **Prompt toggling for M1 macs:** Suppress warnings that the extension might not work on M1 with improved prompt toggling. [#415](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/415)
+* **Quieter watch mode:** Watch mode no longer displays Deployment Successful prompts.
+* **Improved error state:** Get unstuck quicker with more proactive error messaging in the Kubernetes local development webview.
+
+### Bug Fixes
+* Fixed an issue where .NET debugger was using the wrong debugger path with Skaffold. Added `debuggerPath` and `processId` field to the .NET debugger to enable setting the debugger path and process ID of the debuggee. [#397](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/397), [#418](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/418)
+* Fixed an issue where the artifacts property needed to be specified under the default skaffold’s profile even when there were additional profiles. [#398](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/398)
+* Fixed an issue where multiple prompts to install necessary version of Cloud SDK that take up screen space. [#414](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/414)
+* Fixed an issue where the Enable Cloud Run API button was disabled in the Cloud Run WebView.
+
 ## Version 1.10.0 (March 2021)
 
 ### New Features
