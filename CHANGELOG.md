@@ -2,6 +2,21 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.12.0 (May 2021)
+
+### New Features
+* **Build with Cloud Build** When Deploying to Cloud Run or Running/Debugging on Kubernetes, you can select to build with [Cloud Build](https://cloud.google.com/build). Cloud Code will guide you through setting up Cloud Build in your project, and then will automatically configure and submit builds for each image to the cloud. Cloud Code will also make suggestions to use Cloud Build based on your current development environment. For example, Cloud Build will be recommended for deployment to GKE from ARM based clients because of the processor architecture mismatch.
+
+![Google Cloud Build](https://www.gstatic.com/cloudssh/cloudcode/cloud-build.png)
+
+* **Minikube Auto Stop** Improved client side performance for auto scheduling the minikube clusters started by cloud code.
+
+### Updates
+* **Cloud Run** Cloud Run managed deployments now allow up to 8 GiB memory for any deployments with at least 2 vCPUs allocated. 
+
+### Bug Fixes
+* Fixed an issue where validation to have docker installed is not needed when using Google Cloud Build for deploying applications.
+* Support multiple skaffold configurations in one single configuration file. [#424](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/424)
 
 ## Version 1.11.1 (May 2021)
 
