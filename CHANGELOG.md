@@ -1,6 +1,10 @@
 # Cloud Code for Visual Studio Code Release Notes
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
+## Version 1.12.1 (June 2021)
+
+### Bug Fixes
+* Fixed an issue where views were slow to load in Visual Studio Code 1.56.0.
 
 ## Version 1.12.0 (May 2021)
 
