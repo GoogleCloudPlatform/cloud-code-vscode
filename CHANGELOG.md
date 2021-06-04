@@ -2,6 +2,11 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.12.1 (June 2021)
+
+### Bug Fixes
+* Fixed an issue where debug path mapping was broken with Skaffold 1.25.0.
+
 ## Version 1.12.0 (May 2021)
 
 ### New Features
