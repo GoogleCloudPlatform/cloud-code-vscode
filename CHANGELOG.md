@@ -6,9 +6,9 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ### New Features
 * **Simplified combined Kubernetes Explorer and Google Kubernetes Engine Explorer experience** Google Kubernetes Engine Explorer is now merged into Kubernetes Explorer for a unified experience. Kubernetes Explorer now takes you to the Cloud Console for GKE cluster management operations, such as creation and deletion of clusters. Managing cluster types other than minikube and GKE is no longer supported; you’ll need to use the cloud provider's tools to create other cluster types and add them to your KubeConfig.
 
-![Simplified Kubernetes Explorer](https://www.gstatic.com/cloudssh/cloudcode/gke-create-cluster.png)
+![Simplified Kubernetes Explorer](https://www.gstatic.com/cloudssh/cloudcode/simplified-kubernetes-explorer.png)
 
-![Create GKE Cluster](https://www.gstatic.com/cloudssh/cloudcode/simplified-kubernetes-explorer.png)
+![Create GKE Cluster](https://www.gstatic.com/cloudssh/cloudcode/gke-create-cluster.png)
 
 * **Iterative debugging** When you're in debug mode and you make a change to your project, Cloud Code now redeploys your project and sets up a new debug session. You can toggle this feature with the “watch” flag in the launch configuration of your project. By default, “watch” is set to true (similar to run mode).
 
