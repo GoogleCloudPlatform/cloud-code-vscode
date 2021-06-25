@@ -2,6 +2,36 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.13.0 (June 2021)
+### New Features
+* **Simplified combined Kubernetes Explorer and Google Kubernetes Engine Explorer experience** Google Kubernetes Engine Explorer is now merged into Kubernetes Explorer for a unified experience. Kubernetes Explorer now takes you to the Cloud Console for GKE cluster management operations, such as creation and deletion of clusters. Managing cluster types other than minikube and GKE is no longer supported; you’ll need to use the cloud provider's tools to create other cluster types and add them to your KubeConfig.
+
+![Simplified Kubernetes Explorer](https://www.gstatic.com/cloudssh/cloudcode/gke-create-cluster.png)
+
+![Create GKE Cluster](https://www.gstatic.com/cloudssh/cloudcode/simplified-kubernetes-explorer.png)
+
+* **Iterative debugging** When you're in debug mode and you make a change to your project, Cloud Code now redeploys your project and sets up a new debug session. You can toggle this feature with the “watch” flag in the launch configuration of your project. By default, “watch” is set to true (similar to run mode).
+
+![Iterative Debugging](https://www.gstatic.com/cloudssh/cloudcode/iterative-debugging.gif)
+
+* **Change Build Environment on the fly** If, when you begin your Run/Debug on Kubernetes session, Cloud Code detects that you aren't using a recommended build environment for your development environment, you will have a chance to modify the build environment in your current Skaffold profile or change your Skaffold profile to one that uses a recommended build environment.
+
+![Change Build Environment](https://www.gstatic.com/cloudssh/cloudcode/change-build-environment.png)
+
+* **Auto-start docker prompt** When running or debugging Kubernetes and Cloud Run, you now are presented with a new quick-pick menu to start Docker service as part of the dependency check.
+
+![Auto-start Docker Prompt](https://www.gstatic.com/cloudssh/cloudcode/auto-start-docker-prompt.png)
+
+### Updates
+* **Managed Cloud SDK performance improvements** Improvements to the managed Cloud SDK installation process means much of Cloud Code functionality is now available 2 to 5x times faster upon installing the extension.  Additionally, these improvements come with reduced memory consumption and fewer fatal/corruption errors.
+
+* **Improvement to Cloud Run local development webview** The webview now immediately shows any input error without needing to click “Run” button.
+
+![Cloud Run Validation](https://www.gstatic.com/cloudssh/cloudcode/cloud-run-validation-improvements.png)
+
+### Bug Fixes
+* Fixed the application name to use kebab case while cloning template repos. [#430](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/430)
+
 ## Version 1.12.1 (June 2021)
 
 ### Bug Fixes
