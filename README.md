@@ -64,3 +64,7 @@ Browse available Cloud APIs, enable services, and install and learn how to integ
 - [Talk to us](https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg): Connect to the Cloud Code development team by joining our #cloud-code Slack channel
 - [File an issue](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=&template=bug_report.md&title=): If you discover an issue, file a bug and we’ll fix it as soon as possible.
 - [Request a feature](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=): If you have any feature requests, ideas for improvement, and general feedback, submit a feature request.
+
+## Security Disclosures
+
+Please see our [security disclosure process](SECURITY.md).  All [security advisories](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories) are managed on Github.
