@@ -11,9 +11,9 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Suppress error feedback notification based on frequency 
 
 ### Bug Fixes
-* Surfaces errors if unknown Skaffold API version in skaffold.yaml 
+* Surface errors due to unknown Skaffold API version in skaffold.yaml 
 * Improve error handling for gcloud installation when checksum is invalid
-* Prevent errors from minikube status bar to surface
+* Improved error handling when using the minikube status bar
 
 
 ## Version 1.13.0 (June 2021)
