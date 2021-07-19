@@ -4,17 +4,16 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ## Version 1.13.1 (July 2021)
 ### Updates
-* Increase Cloud Run default deployment timeout 
-* Cleanup unnecessary command palette commands
-* Remove usage of gcloud alpha commands
-* Add crash reporting UI for bug reports 
-* Suppress error feedback notification based on frequency 
+* Cloud Run: Increased deployment timeout to 3600 seconds, preventing long running deployments from failing.  
+* Gcloud Dependency: Removed the usage of gcloud alpha commands since all features are now in General Availability or in Beta. 
+* Bug Reporting: Added a webview to conveniently upload stack traces for bug reports.
+* Feedback Notification: Added feature to suppress error feedback notification based on frequency. 
+* Cloud Code Command Palette: Removed unnecessary commands from the palette that are out of context.  
 
 ### Bug Fixes
 * Surface errors due to unknown Skaffold API version in skaffold.yaml 
-* Improve error handling for gcloud installation when checksum is invalid
+* Better recovery from an unsuccessful gcloud installation
 * Improved error handling when using the minikube status bar
-
 
 ## Version 1.13.0 (June 2021)
 ### New Features
