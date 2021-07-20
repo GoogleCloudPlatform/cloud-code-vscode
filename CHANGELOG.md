@@ -11,7 +11,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * **Remove out-of-context Cloud Code commands**: Removed unnecessary commands from the palette that are out of context.  
 
 ### Bug Fixes
-* Fixed service and image names to kebab case. [#436](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/436)
+* Changed default service and image names to kebab case to deal with spaces, symbols, and uppercase letters present in workspace folder name. [#436](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/436)
 * Surface errors due to unknown Skaffold API version in skaffold.yaml.
 * Better recovery from an unsuccessful gcloud installation.
 * Improved error handling when using the minikube status bar.
