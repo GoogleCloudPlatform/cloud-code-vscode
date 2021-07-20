@@ -2,6 +2,20 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.13.1 (July 2021)
+### Updates
+* **Cloud Run timeout:** Increased deployment timeout to 3600 seconds, preventing long running deployments from failing.  
+* **Gcloud dependency beta removal:** Removed the usage of gcloud alpha commands since all features are now in General Availability or in Beta. 
+* **Convenient bug reporting:** Added a webview to conveniently upload stack traces for bug reports.
+* **Suppress feedback notification**: Added feature to suppress error feedback notification based on frequency. 
+* **Remove out-of-context Cloud Code commands**: Removed unnecessary commands from the palette that are out of context.  
+
+### Bug Fixes
+* Changed default service and image names to kebab case to deal with spaces, symbols, and uppercase letters present in workspace folder name. [#436](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/436)
+* Surface errors due to unknown Skaffold API version in skaffold.yaml.
+* Better recovery from an unsuccessful gcloud installation.
+* Improved error handling when using the minikube status bar.
+
 ## Version 1.13.0 (June 2021)
 ### New Features
 * **Simplified combined Kubernetes Explorer and Google Kubernetes Engine Explorer experience** Google Kubernetes Engine Explorer is now merged into Kubernetes Explorer for a unified experience. Kubernetes Explorer now takes you to the Cloud Console for GKE cluster management operations, such as creation and deletion of clusters. Managing cluster types other than minikube and GKE is no longer supported; you’ll need to use the cloud provider's tools to create other cluster types and add them to your KubeConfig.
