@@ -1,8 +1,8 @@
 # Cloud Code for Visual Studio Code
 
-Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native Kubernetes and Cloud Run application development. Cloud Code integrates with a chain of Google Cloud products(like GKE, Cloud Run, Cloud APIs, Secret Manager) and makes you feel like you are working with local code. 
+Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native application development. Cloud Code integrates with Google Cloud services like Google Kubernetes Engine, Cloud Run, Cloud APIs and Secret Manager. Cloud Code makes you feel like you are working with local code.
 
-Cloud Code works with Google’s command-line [`container tools`](https://github.com/GoogleContainerTools) like [`skaffold`](https://skaffold.dev/), [`minikube`](https://minikube.sigs.k8s.io/docs/) and [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) under the hood, providing local, continuous feedback on your project as you build, edit, run and deploy your applications locally or in the cloud. Deeply integrates with [`Cloud SDK`](https://cloud.google.com/sdk) to provide single unified authentication in to developing services against Google Cloud.
+Cloud Code works with Google’s command-line container tools like [`skaffold`](https://skaffold.dev/), [`minikube`](https://minikube.sigs.k8s.io/docs/) and [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) under the hood, providing local, continuous feedback on your project as you build, edit, run and deploy your applications locally or in the cloud. Cloud Code also deeply integrates with [`Cloud SDK`](https://cloud.google.com/sdk) to provide single unified authentication experience when you develop with Google Cloud Services.
 
 ![E2E workflow](https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/cloud-code-quick-deploy.gif)
 
@@ -10,7 +10,7 @@ Cloud Code works with Google’s command-line [`container tools`](https://github
 
 ## Supporting your development workflow
 
-Get run-ready cloud samples, out-of-the-box configuration snippets, support for key Google Cloud Services like Google Cloud APIs and Google Cloud Build, Buildpacks, Secrets Manager, one click deployment, a tailored debugging experience, iterative run/debug experience and much more with Cloud Code — making developing with Kubernetes and Cloud Run a whole lot easier!
+Get run-ready sample applications, out-of-the-box configuration snippets, support for key Google Cloud Services like Cloud APIs and Google Cloud Build, Cloud Native Buildpacks, Secrets Manager, one click deployment, a tailored debugging experience, iterative run/debug experience and much more. Cloud Code makes developing with Kubernetes and Cloud Run a whole lot easier!
 
 <details>
   <summary>Read more</summary>
