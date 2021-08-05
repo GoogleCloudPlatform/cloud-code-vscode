@@ -1,8 +1,8 @@
 # Cloud Code for Visual Studio Code
 
-Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native application development. Cloud Code integrates with Google Cloud services like Google Kubernetes Engine, Cloud Run, Cloud APIs and Secret Manager. Cloud Code makes you feel like you are working with local code.
+Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native application development. Cloud Code integrates with Google Cloud services like Google Kubernetes Engine, Cloud Run, Cloud APIs and Secret Manager, and makes you feel like you are working with local code.
 
-Cloud Code works with Google’s command-line container tools like [`skaffold`](https://skaffold.dev/), [`minikube`](https://minikube.sigs.k8s.io/docs/) and [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) under the hood, providing local, continuous feedback on your project as you build, edit, run and deploy your applications locally or in the cloud. Cloud Code also deeply integrates with [`Cloud SDK`](https://cloud.google.com/sdk) to provide single unified authentication experience when you develop with Google Cloud Services.
+Cloud Code works with Google’s command-line container tools like [`skaffold`](https://skaffold.dev/), [`minikube`](https://minikube.sigs.k8s.io/docs/) and [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) under the hood, providing local, continuous feedback on your project as you build, edit, run and deploy your applications locally or in the cloud. Cloud Code also deeply integrates with [`Cloud SDK`](https://cloud.google.com/sdk) to provide a single unified authentication experience when you develop with Google Cloud Services.
 
 ![E2E workflow](https://github.com/GoogleCloudPlatform/cloud-code-vscode/raw/master/images/cloud-code-quick-deploy.gif)
 
