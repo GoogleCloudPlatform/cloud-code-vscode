@@ -2,6 +2,10 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.13.2 (Aug 2021)
+### Bug Fixes
+* Fixed an issue about collecting feedback and log refresh.
+
 ## Version 1.13.1 (July 2021)
 ### Updates
 * **Cloud Run timeout:** Increased deployment timeout to 3600 seconds, preventing long running deployments from failing.  
