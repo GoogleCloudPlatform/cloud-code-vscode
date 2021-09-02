@@ -9,7 +9,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * **New and Improved Kubernetes Development Experience:** Your Kubernetes development sessions now have a vastly improved experience with the new Development Sessions explorer!
 ![Development Sessions Welcome View](https://www.gstatic.com/cloudssh/cloudcode/welcome-development-sessions.png)
     * See exactly which task is executing and the status of each task.
-    ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-1.png) ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-2.png)
+    ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-2.png)
     * View the full session logs.
     ![Development Sessions Logs Full](https://www.gstatic.com/cloudssh/cloudcode/session-log-success-development-sessions.png)
     * Or drill down the logs of an individual task to quickly identify errors.
