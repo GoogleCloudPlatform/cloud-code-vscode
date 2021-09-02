@@ -2,6 +2,39 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.14.0 (Sept 2021)
+
+### New Features
+
+*   **New and Improved Kubernetes Development Experience:** Your Kubernetes development sessions now have a vastly improved experience with the new Development Sessions explorer!
+![Development Sessions Welcome View](https://www.gstatic.com/cloudssh/cloudcode/welcome-development-sessions.png)
+    *   See exactly which task is executing and the status of each task.
+    ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-1.png) ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-2.png)
+    *   View the full session logs.
+    ![Development Sessions Logs Full](https://www.gstatic.com/cloudssh/cloudcode/session-log-success-development-sessions.png)
+    *   Or drill down the logs of an individual task to quickly identify errors.
+    ![Development Sessions Logs Drilldown](https://www.gstatic.com/cloudssh/cloudcode/session-log-failure-development-sessions.png)
+    *   Stream your application logs at the container level.
+    ![Development Sessions Streaming Logs](https://www.gstatic.com/cloudssh/cloudcode/stream-logs-development-sessions.png)
+    *   Browse the deployed Kubernetes resources in the cluster, scoped to the session and quickly access the pod terminal.
+    ![Development Sessions Kubernetes Resources - Get Terminal selected](https://www.gstatic.com/cloudssh/cloudcode/view-resource-get-terminal-development-sessions.png)
+
+*   **Logs Viewer Refresh:** Logs Viewer is redesigned to give more room for the logs with no functionality changes.
+![New Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/logs-viewer-refresh-top.png)
+    *   Introduced pagination control to the logs table, by default the logs table shows 50 entries.
+    ![New Logs Viewer Pagination](https://www.gstatic.com/cloudssh/cloudcode/logs-viewer-refresh-bottom.png)
+
+### Updates
+
+*   **Cloud Run Emulator on Local Network:** Cloud Run Emulator now includes an option to port forward your service to `0.0.0.0` so you can debug it on other devices on the local network, such as your phone. To use this, check the Make the service accessible from other devices on the local network checkbox in the setup UI, or set `externalPortForward` in your launch.json configuration to the port you want the service exposed on. [#444](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/444)
+*   **YAML Editing Support unavailable warning:** When editing a Kubernetes YAML file, Cloud Code warns you if it doesn't recognize the schema. When this occurs, verify that the `Version` and `Kind` of your YAML configuration is correct.
+
+### Bug Fixes
+
+*   Managed Dependency Check Failed [#462](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/462)
+*   Extension Failure: Managed Dependencies Off [#452](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/452)
+*   Not enough differentiability between GKE resource status markers [#425](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/425)
+
 ## Version 1.13.2 (Aug 2021)
 ### Bug Fixes
 * Fixed an issue about collecting feedback and log refresh.
