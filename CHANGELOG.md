@@ -2,6 +2,12 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.14.1 (Sept 2021)
+
+### Bug Fixes
+
+* Fixes a race condition for Skaffold that caused low CPU resource scenarios to hang [#469](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/469)
+
 ## Version 1.14.0 (Sept 2021)
 
 ### New Features
