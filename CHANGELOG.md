@@ -2,6 +2,29 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.15.0 (Oct 2021)
+
+### New Features
+
+* **Kubernetes Dry-Run in Language Server:** Cloud Code’s YAML Language Server now performs a server-side dry-run on your file as you type, and reports problems right in the editor.
+![Kubernetes Dry-Run in Language Server](https://www.gstatic.com/cloudssh/cloudcode/kuberneres-dry-run-language-server.png)
+
+### Updates
+
+* **Dependency Install Welcome View:** We now show a Welcome View on all explorers that are blocked due to dependency install or upgrade.
+![Dependency Install Welcome View](https://www.gstatic.com/cloudssh/cloudcode/dependency-install-welcome-view.png)
+
+### Bug Fixes
+
+* Option for Get Terminal to run '/bin/bash' instead of 'sh' [#464](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/464)
+* Settings: Cloudcode › Yaml: Kubernetes Version outdated? [#476](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/476)
+
+### Features available in [Insiders](https://cloud.google.com/code/docs/vscode/insiders)
+
+* **Support for Skaffold modules:** “Run on Kubernetes” now supports running one or more Skaffold modules rather than deploying your entire application. You can configure the set of modules in your launch configuration (launch.json) > skaffoldFlags > modules.
+* **Apigee integration:** Cloud Code now features integration with your Apigee workspaces, with editing and local emulator support.
+* **New API Browser experience:** Code Samples browsing tab is integrated with the API browser. You can browse and copy code samples from different Google Cloud API Client Libraries. Available for NodeJS, Python, Go and Java.
+
 ## Version 1.14.1 (Sept 2021)
 
 ### Bug Fixes
