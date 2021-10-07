@@ -12,7 +12,6 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ### Updates
 
 * **Dependency Install Welcome View:** We now show a Welcome View on all explorers that are blocked due to dependency install or upgrade.
-![Dependency Install Welcome View](https://www.gstatic.com/cloudssh/cloudcode/dependency-install-welcome-view.png)
 
 ### Bug Fixes
 
