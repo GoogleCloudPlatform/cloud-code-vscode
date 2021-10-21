@@ -6,7 +6,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### Updates
 
-* **Temporarily Disabling Iterative Debugging:** Due to an issue identified in Skaffold v1.33.0 ([Skaffold #6735](https://github.com/GoogleContainerTools/skaffold/issues/6735)), we are temporarily disabling watch mode for debugging. Please follow [#486](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/486) for updates on the situation.
+* **Temporarily Disabling Iterative Debugging:** Due to an issue identified in Skaffold v1.33.0, we are temporarily disabling watch mode for debugging. Please follow [#486](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/486) for more information and updates.
 
 ## Version 1.15.0 (Oct 2021)
 
