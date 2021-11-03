@@ -2,6 +2,38 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.16.0 (Nov 2021)
+
+### New Features
+
+* **Apigee (API Management) in VS Code:**
+  * Apigee in VS Code enables developers to develop API proxies and shared flows and verify the functionality through unit and manual testing using the Apigee Emulator (local runtime).  Apigee in VS Code provides:
+    * Basic management of multiple environments
+    * Specialized wizards for developing proxies and shared flows
+    * Automatic injection of Apigee variables in policies and scripts
+  * Develop API proxies using specialized wizards
+    ![API proxy wizards](https://www.gstatic.com/cloudssh/cloudcode/apigee-create-proxy.gif)
+  * Deploy and test your Apigee API proxies
+    ![API proxy deployment and testing](https://www.gstatic.com/cloudssh/cloudcode/apigee-deploy.gif)
+  * Create policies using pre-configured snippets and use auto-complete features to insert variables
+    ![Policy creation](https://www.gstatic.com/cloudssh/cloudcode/apigee-variables.gif)
+  * Install and manage Apigee Emulators (local runtime)
+    ![Apigee emulators](https://www.gstatic.com/cloudssh/cloudcode/apigee-emulator-install.gif)
+
+### Updates
+
+* **New API Browser experience:**
+  * Discover code snippets in the IDE. Added a “Code Samples” tab where you can search for and use code samples for each GCP API exposed in the API Browser.
+    * Click “Cloud Code - Cloud APIs”.
+    * To open the detail view, click the name of an API.
+    * To view code samples for the API, click “Code Samples”.
+    * To filter the list of samples, type text to search for or choose a programming language from the “Language” list.
+    * To view a sample, click the name of the sample. There are also options to copy the sample to your clipboard or view the sample in GitHub.
+
+### Bug Fixes
+
+* Cloud Run Emulator: UI bug when adding environment variable [#485](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/485)
+
 ## Version 1.15.1 (Oct 2021)
 
 ### Updates
