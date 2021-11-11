@@ -29,6 +29,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
     * To view code samples for the API, click “Code Samples”.
     * To filter the list of samples, type text to search for or choose a programming language from the “Language” list.
     * To view a sample, click the name of the sample. There are also options to copy the sample to your clipboard or view the sample in GitHub.
+   ![New API Browser](https://www.gstatic.com/cloudssh/cloudcode/api_browser.gif)
 
 ### Bug Fixes
 
