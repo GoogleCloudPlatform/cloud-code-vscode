@@ -2,6 +2,12 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.16.1 (Nov 2021)
+
+### Updates
+
+* Fixes an issue where API Browser is not loading without Internet connection.
+
 ## Version 1.16.0 (Nov 2021)
 
 ### New Features
