@@ -38,23 +38,18 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ### Updates
 
 * **New Welcome Page experience**
-
-
   ![The new welcome page](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page.png)
 
   * **Guided Tour Link:**
   In addition to samples, the Welcome page includes one-click access to a guided tour in Cloud Shell Editor so that you can try various Cloud Code features out without any setup. Cloud Shell Editor is a Theia-based code editor available by default with every Cloud Shell instance.
-
   ![New guided tour options](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-samples-1.png)
 
   * **Feature Highlight:**
   A new section to learn about what you can achieve with Cloud Code in Kubernetes, Cloud Run, Secret Manager and more.
-
   ![Welcome page feature highlight section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-highlight-1.png)
 
   * **Documentation Links:**
   Access various documentations including Skaffold and minikube.
-
   ![Welcome page documentation section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-documentation-1.png)
   * Try it on! Type **"Cloud Code > Welcome"** into the command palette to see the new experience.
 
