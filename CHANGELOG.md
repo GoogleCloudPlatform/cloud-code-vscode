@@ -2,6 +2,62 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.17.0 (Dec 2021)
+
+### New Features
+
+* **Private Cluster Support:**
+  Cloud Code provides guidance and helper utilities to help you connect to your [GKE private clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters).
+
+  * When there is an issue connecting to a private cluster, Cloud Code shows error messages with suggested workarounds for the private cluster configuration it detects. To see the workarounds, click a broken cluster in the Kubernetes Explorer. Notifications also appear when connection errors occur.
+  ![Private Clusters Error Popup](https://www.gstatic.com/cloudssh/cloudcode/private-clusters-error-popup.png)
+
+  * Cloud Code helps you set up proxying for a cluster, which is useful for when the public endpoint to the Control Plane API is not accessible from your client network and you must proxy API requests through a server in the same
+  ![Private Clusters setup proxy](https://www.gstatic.com/cloudssh/cloudcode/private-clusters-setup-proxy.gif)
+
+  * Cloud Code will help you set up a [Cloud NAT](https://cloud.google.com/nat/docs/overview) configuration for your GKE cluster’s VPC so nodes have outbound internet access. By default, GKE private clusters don't provide nodes with access to the public internet, which makes container image repositories outside Google Cloud inaccessible.
+  ![Private Clusters setup NAT](https://www.gstatic.com/cloudssh/cloudcode/private-clusters-setup-nat.gif)
+
+* **Artifact Registry Support:**
+  UI improvements make it easier to configure your Kubernetes deployments to store images using Artifact Registry. To have the Artifact registry option appear in the UI, the active Google Cloud project must have the Artifact Registry API enabled and at least one Artifact Registry repository.
+
+  * If an Artifact Registry Repo exists within your project, you can select the option to push images to an Artifact Registry repo.
+  ![Choose Artifact Registry option](https://www.gstatic.com/cloudssh/cloudcode/artifact-registry-choose-option.png)
+
+  * Select the Artifact Registry repo you wish to deploy to.
+  ![Choose Artifact Registry repo](https://www.gstatic.com/cloudssh/cloudcode/artifact-registry-choose-repo.png)
+
+  * Input the path within the chosen repo that the image should be stored at.
+  ![Choose Artifact Registry path](https://www.gstatic.com/cloudssh/cloudcode/artifact-registry-choose-path.png)
+* **Multi Microservice development:**
+Module-based application deployment through [Skaffold modules](https://cloud.google.com/code/docs/intellij/skaffold-modules) helps individual developers to iterate on part of the application.
+  * **Run on Kubernetes** supports deploying one or more modules rather than deploying your entire application. You can configure the set of modules in your launch configuration (launch.json file) > **skaffoldFlags > modules**.
+  * To see modules-based application deployment in action, try out one of the Cloud Code Kubernetes Guestbook sample applications by creating a new sample project (**Run Cloud Code: New Application** from the command palette).
+  ![Skaffold modules example](https://www.gstatic.com/cloudssh/cloudcode/skaffold-modules.gif)
+
+### Updates
+
+* **New Welcome Page experience**
+
+
+  ![The new welcome page](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page.png)
+
+  * **Guided Tour Link:**
+  In addition to samples, the Welcome page includes one-click access to a guided tour in Cloud Shell Editor so that you can try various Cloud Code features out without any setup. Cloud Shell Editor is a Theia-based code editor available by default with every Cloud Shell instance.
+
+  ![New guided tour options](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-samples-1.png)
+
+  * **Feature Highlight:**
+  A new section to learn about what you can achieve with Cloud Code in Kubernetes, Cloud Run, Secret Manager and more.
+
+  ![Welcome page feature highlight section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-highlight-1.png)
+
+  * **Documentation Links:**
+  Access various documentations including Skaffold and minikube.
+
+  ![Welcome page documentation section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-documentation-1.png)
+  * Try it on! Type **"Cloud Code > Welcome"** into the command palette to see the new experience.
+
 ## Version 1.16.1 (Nov 2021)
 
 ### Updates
