@@ -30,7 +30,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
   * Input the path within the chosen repo that the image should be stored at.
   ![Choose Artifact Registry path](https://www.gstatic.com/cloudssh/cloudcode/artifact-registry-choose-path.png)
 * **Multi Microservice development:**
-Module-based application deployment through [Skaffold modules](https://cloud.google.com/code/docs/intellij/skaffold-modules) helps individual developers to iterate on part of the application.
+Module-based application deployment through [Skaffold modules](https://cloud.google.com/code/docs/vscode/skaffold-modules) helps individual developers to iterate on part of the application.
   * **Run on Kubernetes** supports deploying one or more modules rather than deploying your entire application. You can configure the set of modules in your launch configuration (launch.json file) > **skaffoldFlags > modules**.
   * To see modules-based application deployment in action, try out one of the Cloud Code Kubernetes Guestbook sample applications by creating a new sample project (**Run Cloud Code: New Application** from the command palette).
   ![Skaffold modules example](https://www.gstatic.com/cloudssh/cloudcode/skaffold-modules.gif)
