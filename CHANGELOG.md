@@ -53,6 +53,12 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
   ![Welcome page documentation section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-documentation-1.png)
   * Try it on! Type **"Cloud Code > Welcome"** into the command palette to see the new experience.
 
+### Bug Fixes
+
+* Fixed Python debug issue [#494](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/494)
+* Fixed issue with IntOrString [#488](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/488)
+* Added kustomization schema [#478](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/478)
+
 ## Version 1.16.1 (Nov 2021)
 
 ### Updates
