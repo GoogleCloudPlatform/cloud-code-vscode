@@ -30,7 +30,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
   * Input the path within the chosen repo that the image should be stored at.
   ![Choose Artifact Registry path](https://www.gstatic.com/cloudssh/cloudcode/artifact-registry-choose-path.png)
 * **Multi Microservice development:**
-Module-based application deployment through [Skaffold modules](https://cloud.google.com/code/docs/intellij/skaffold-modules) helps individual developers to iterate on part of the application.
+Module-based application deployment through [Skaffold modules](https://cloud.google.com/code/docs/vscode/skaffold-modules) helps individual developers to iterate on part of the application.
   * **Run on Kubernetes** supports deploying one or more modules rather than deploying your entire application. You can configure the set of modules in your launch configuration (launch.json file) > **skaffoldFlags > modules**.
   * To see modules-based application deployment in action, try out one of the Cloud Code Kubernetes Guestbook sample applications by creating a new sample project (**Run Cloud Code: New Application** from the command palette).
   ![Skaffold modules example](https://www.gstatic.com/cloudssh/cloudcode/skaffold-modules.gif)
@@ -52,6 +52,12 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
   Access various documentations including Skaffold and minikube.
   ![Welcome page documentation section](https://www.gstatic.com/cloudssh/cloudcode/new-welcome-page-documentation-1.png)
   * Try it on! Type **"Cloud Code > Welcome"** into the command palette to see the new experience.
+
+### Bug Fixes
+
+* Fixed Python debug issue [#494](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/494)
+* Fixed issue with IntOrString [#488](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/488)
+* Added kustomization schema [#478](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/478)
 
 ## Version 1.16.1 (Nov 2021)
 
