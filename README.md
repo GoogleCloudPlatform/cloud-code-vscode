@@ -102,3 +102,6 @@ through build and test cycles without impact to dependent applications.
 ## Security Disclosures
 
 Please see our [security disclosure process](SECURITY.md).  All [security advisories](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories) are managed on Github.
+
+*Apache Log4j 2 Vulnerability (Log4j 2):* the Cloud Code guide to [_"Setting up a samples repository"_](https://cloud.google.com/code/docs/intellij/set-up-sample-repo) linked to a demonstration project with a sample using a vulnerable version of Log4j 2. We strongly advise customers to update their samples repositories. Visit the [security advisory](https://github.com/GoogleCloudPlatform/cloud-code-intellij/security/advisories/GHSA-98x4-2mhq-c95x) for details and remediation.
+
