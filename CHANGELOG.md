@@ -13,7 +13,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ### Bug Fixes
 
 * Extension causes high cpu load [#523](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/523)
-* Fixed an issue where Cloud API getting started information and samples might not reflect the chosen language.
+* Fixed an issue where getting started information and samples in the Google Cloud API Detail viewer might not reflect the chosen language.
 
 ## Version 1.17.0 (Dec 2021)
 
