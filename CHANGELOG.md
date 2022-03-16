@@ -2,6 +2,19 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.17.1 (Mar 2022)
+
+### Updates
+
+* When a Run/Debug session is started without an open workspace, Cloud Code will recommend that you open a workspace or create a new sample application.
+* **Project Selector Improvements:** You can now easily switch accounts, create a new project, and refresh the list of projects directly from the project picker.
+![Project Selector Improvements](https://www.gstatic.com/cloudssh/cloudcode/account-switch-refresh-project-switcher.png)
+
+### Bug Fixes
+
+* Extension causes high cpu load [#523](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/523)
+* Fixed an issue where getting started information and samples in the Google Cloud API Detail viewer might not reflect the chosen language.
+
 ## Version 1.17.0 (Dec 2021)
 
 ### New Features
