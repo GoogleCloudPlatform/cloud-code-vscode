@@ -2,6 +2,24 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.18.0 (Apr 2022)
+
+### Updates
+![One Activity Bar](https://www.gstatic.com/cloudssh/cloudcode/one-activity-bar-release-notes.png)
+
+1. **Single Activity Bar Icon:**
+  We reduced the amount of space Cloud Code takes on your screen by reducing our five activity bar icons to one. 
+
+2. **New Project Selector Status Bar:**
+  Cloud Code shows your active Google Cloud project in the status bar so you are always aware what project an action will apply to. You can click the status bar item to change the project.
+
+3. **Unified Explorer**
+  All Cloud Code resource explorers are now consolidated under the single Activity Bar icon.
+
+![Minikube Status Bar](https://www.gstatic.com/cloudssh/cloudcode/oab-minikube-status-bar.png)
+* **Minikube Status Bar Relocation:**
+  To make room for the project selector status bar, we moved the Minikube Status Bar functionality into an option in the Cloud Code Status Bar menu.
+
 ## Version 1.17.2 (Apr 2022)
 
 ### Bug Fixes
