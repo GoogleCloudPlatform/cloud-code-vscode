@@ -8,6 +8,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 * Various bug fixes and stability improvements.
 
+
 ## Version 1.18.1 (Apr 2022)
 
 ### Bug Fix
