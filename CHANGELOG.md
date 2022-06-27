@@ -2,13 +2,22 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.18.4 (June 2022)
+
+### Updates
+
+* UX Improvement for Cloud Code in IDE survey
+
+### Bug Fixes
+
+* Various bug fixes and stability improvements.
+
 ## Version 1.18.3 (May 2022)
 
 ### Bug Fixes
 
 * Enhanced error reporting options for minikube startup
 * Various bug fixes and stability improvements.
-
 
 ## Version 1.18.2 (May 2022)
 
