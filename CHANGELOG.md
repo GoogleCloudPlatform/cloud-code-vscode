@@ -4,6 +4,10 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ## Version 1.18.4 (June 2022)
 
+### Updates
+
+* UX Improvement for Cloud Code in IDE survey
+
 ### Bug Fixes
 
 * Various bug fixes and stability improvements.
