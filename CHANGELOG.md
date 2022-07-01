@@ -2,14 +2,23 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.18.4 (June 2022)
+## Version 1.19.0 (Jul 2022)
+
+### New Features
+
+* **Cross-Platform Local Docker Builds:**
+  Cloud Code now supports building cross-platform Docker container images locally using Docker BuildX.
+    * When running/debugging on Kubernetes, the platform of the target cluster is automatically detected and container images are built for that platform, irrespective of the client platform.
+    * Warnings to use Cloud Build as a workaround no longer appear for users on ARM64 clients such as M-series MacOS devices when deploying to AMD64 platforms such as GKE and Cloud Run.
 
 ### Updates
 
+* Removed requirement for Rosetta on M-series MacOS devices, as all our dependencies are now built for ARM64.
 * UX Improvement for Cloud Code in IDE survey
 
 ### Bug Fixes
 
+* Extension 'Cloud Code' is configured as formatter but it cannot format 'YAML' files [#587](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/587)
 * Various bug fixes and stability improvements.
 
 ## Version 1.18.3 (May 2022)
@@ -27,7 +36,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ## Version 1.18.1 (Apr 2022)
 
-### Bug Fix
+### Bug Fixes
 
 * Reducing VSCode version requirement for Cloud Code from 1.66 to 1.63.
 
