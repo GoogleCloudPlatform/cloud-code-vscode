@@ -11,7 +11,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
     * Use the Compute Engine Explorer to [view the properties of your VMs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_vms) and quickly access Cloud Console to edit these properties.
     * Use the “[Open SSH](https://cloud.google.com/code/docs/vscode/manage-vms#connecting_to_a_vm)” button in the explorer to open a VS Code integrated terminal SSH'd into your VM instance. If the connection fails, Cloud Code will help you troubleshoot common connectivity issues.
     ![GCE Explorer SSH](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-ssh-release-notes.png)
-    * Use the “Upload File via SCP” button to upload files from your local client to your VM instance. Once files are uploaded, you can easily access them in your instance’s home directory using the SSH connection provided by Cloud Code.
+    * Use the “[Upload File via SCP](https://cloud.google.com/code/docs/vscode/manage-vms#uploading_a_file_to_a_vm)” button to upload files from your local client to your VM instance. Once files are uploaded, you can easily access them in your instance’s home directory using the SSH connection provided by Cloud Code.
     ![GCE Exlorer SCP](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-scp-release-notes.png)
     * Use the “[View Logs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_application_logs_on_a_vm)” button to open the Cloud Code Logs Viewer to view logs from your VMs to help you debug your applications.
     ![GCE Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-logs-viewer-release-notes.png)
