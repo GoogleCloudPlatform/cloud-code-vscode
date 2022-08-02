@@ -2,14 +2,37 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.20.0 (Jul 2022)
+
+### New Features
+
 ## Version 1.19.0 (Jul 2022)
+
+* **Google Compute Engine:**
+  Cloud Code now supports Google Compute Engine helping you [work with your Virtual Machines right from your IDE.](https://cloud.google.com/code/docs/vscode/manage-vms)
+  * Use the Compute Engine Explorer to [view the properties of your VMs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_vms) and quickly access the Cloud Console to edit these properties.
+  * Use the [Open SSH](https://cloud.google.com/code/docs/vscode/manage-vms#connecting_to_a_vm) button in the explorer to open a VS Code integrated terminal SSH'd into your VM instance. If the connection fails, Cloud Code will help you troubleshoot common connectivity issues.
+  ![GCE Explorer SSH](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-ssh-release-notes.png)
+  * Use the [View Logs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_application_logs_on_a_vm) button to open the Cloud Code Logs Viewer to view logs from your VMs to help you debug your applications.
+  ![GCE Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-logs-viewer-release-notes.png)
+
+### Updates
+
+* Using Cloud SQL database connections in Cloud Run Emulator no longer requires a service account. If you specify a Cloud SQL database without specifying a service account, your Application Default Credentials will be used to authenticate a connection to the database.
+* Some Kubernetes Explorer functionality has been updated to call your cluster’s control plane API directly instead of using kubectl to retrieve the data. This significantly reduces the computational overhead and latency of the Kubernetes Explorer, especially on Windows machines where spawning processes is expensive.
+
+### Bug Fixes
+
+* Skaffold clean up error [#606](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/606)
+* Error deploying with cloudsql connection [#613](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/613)
+* Fixed an issue where child processes might continue to run after exiting VS Code
 
 ### New Features
 
 * **Cross-Platform Local Docker Builds:**
   Cloud Code now supports building cross-platform Docker container images locally using Docker BuildX.
-    * When running/debugging on Kubernetes, the platform of the target cluster is automatically detected and container images are built for that platform, irrespective of the client platform.
-    * Warnings to use Cloud Build as a workaround no longer appear for users on ARM64 clients such as M-series MacOS devices when deploying to AMD64 platforms such as GKE and Cloud Run.
+  * When running/debugging on Kubernetes, the platform of the target cluster is automatically detected and container images are built for that platform, irrespective of the client platform.
+  * Warnings to use Cloud Build as a workaround no longer appear for users on ARM64 clients such as M-series MacOS devices when deploying to AMD64 platforms such as GKE and Cloud Run.
 
 ### Updates
 
@@ -43,10 +66,11 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ## Version 1.18.0 (Apr 2022)
 
 ### Updates
+
 ![One Activity Bar](https://www.gstatic.com/cloudssh/cloudcode/one-activity-bar-release-notes.png)
 
 1. **Single Activity Bar Icon:**
-  We reduced the amount of space Cloud Code takes on your screen by reducing our five activity bar icons to one. 
+  We reduced the amount of space Cloud Code takes on your screen by reducing our five activity bar icons to one.
 
 2. **New Project Selector Status Bar:**
   Cloud Code shows your active Google Cloud project in the status bar so you are always aware what project an action will apply to. You can click the status bar item to change the project.
@@ -55,6 +79,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
   All Cloud Code resource explorers are now consolidated under the single Activity Bar icon.
 
 ![Minikube Status Bar](https://www.gstatic.com/cloudssh/cloudcode/oab-minikube-status-bar.png)
+
 * **Minikube Status Bar Relocation:**
   To make room for the project selector status bar, we moved the Minikube Status Bar functionality into an option in the Cloud Code Status Bar menu.
 
@@ -213,20 +238,20 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 
 * **New and Improved Kubernetes Development Experience:** Your Kubernetes development sessions now have a vastly improved experience with the new Development Sessions explorer!
 ![Development Sessions Welcome View](https://www.gstatic.com/cloudssh/cloudcode/welcome-development-sessions.png)
-    * See exactly which task is executing and the status of each task.
+  * See exactly which task is executing and the status of each task.
     ![Development Sessions In Progress](https://www.gstatic.com/cloudssh/cloudcode/in-progress-development-sessions-2.png)
-    * View the full session logs.
+  * View the full session logs.
     ![Development Sessions Logs Full](https://www.gstatic.com/cloudssh/cloudcode/session-log-success-development-sessions.png)
-    * Or drill down the logs of an individual task to quickly identify errors.
+  * Or drill down the logs of an individual task to quickly identify errors.
     ![Development Sessions Logs Drilldown](https://www.gstatic.com/cloudssh/cloudcode/session-log-failure-development-sessions.png)
-    * Stream your application logs at the container level.
+  * Stream your application logs at the container level.
     ![Development Sessions Streaming Logs](https://www.gstatic.com/cloudssh/cloudcode/stream-logs-development-sessions.png)
-    * Browse the deployed Kubernetes resources in the cluster, scoped to the session and quickly access the pod terminal.
+  * Browse the deployed Kubernetes resources in the cluster, scoped to the session and quickly access the pod terminal.
     ![Development Sessions Kubernetes Resources - Get Terminal selected](https://www.gstatic.com/cloudssh/cloudcode/view-resource-get-terminal-development-sessions.png)
 
 * **Logs Viewer Refresh:** Logs Viewer is redesigned to give more room for the logs with no functionality changes.
 ![New Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/logs-viewer-refresh-top.png)
-    * Introduced pagination control to the logs table, by default the logs table shows 50 entries.
+  * Introduced pagination control to the logs table, by default the logs table shows 50 entries.
     ![New Logs Viewer Pagination](https://www.gstatic.com/cloudssh/cloudcode/logs-viewer-refresh-bottom.png)
 
 ### Updates
@@ -241,25 +266,32 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 * Not enough differentiability between GKE resource status markers [#425](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/425)
 
 ## Version 1.13.2 (Aug 2021)
+
 ### Bug Fixes
+
 * Fixed an issue about collecting feedback and log refresh.
 
 ## Version 1.13.1 (July 2021)
+
 ### Updates
-* **Cloud Run timeout:** Increased deployment timeout to 3600 seconds, preventing long running deployments from failing.  
-* **Gcloud dependency beta removal:** Removed the usage of gcloud alpha commands since all features are now in General Availability or in Beta. 
+
+* **Cloud Run timeout:** Increased deployment timeout to 3600 seconds, preventing long running deployments from failing.
+* **Gcloud dependency beta removal:** Removed the usage of gcloud alpha commands since all features are now in General Availability or in Beta.
 * **Convenient bug reporting:** Added a webview to conveniently upload stack traces for bug reports.
-* **Suppress feedback notification**: Added feature to suppress error feedback notification based on frequency. 
-* **Remove out-of-context Cloud Code commands**: Removed unnecessary commands from the palette that are out of context.  
+* **Suppress feedback notification**: Added feature to suppress error feedback notification based on frequency.
+* **Remove out-of-context Cloud Code commands**: Removed unnecessary commands from the palette that are out of context.
 
 ### Bug Fixes
+
 * Changed default service and image names to kebab case to deal with spaces, symbols, and uppercase letters present in workspace folder name. [#436](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/436)
 * Surface errors due to unknown Skaffold API version in skaffold.yaml.
 * Better recovery from an unsuccessful gcloud installation.
 * Improved error handling when using the minikube status bar.
 
 ## Version 1.13.0 (June 2021)
+
 ### New Features
+
 * **Simplified combined Kubernetes Explorer and Google Kubernetes Engine Explorer experience** Google Kubernetes Engine Explorer is now merged into Kubernetes Explorer for a unified experience. Kubernetes Explorer now takes you to the Cloud Console for GKE cluster management operations, such as creation and deletion of clusters. Managing cluster types other than minikube and GKE is no longer supported; you’ll need to use the cloud provider's tools to create other cluster types and add them to your KubeConfig.
 
 ![Simplified Kubernetes Explorer](https://www.gstatic.com/cloudssh/cloudcode/simplified-kubernetes-explorer.png)
@@ -279,6 +311,7 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ![Auto-start Docker Prompt](https://www.gstatic.com/cloudssh/cloudcode/auto-start-docker-prompt.png)
 
 ### Updates
+
 * **Managed Cloud SDK performance improvements** Improvements to the managed Cloud SDK installation process means much of Cloud Code functionality is now available 2 to 5x times faster upon installing the extension.  Additionally, these improvements come with reduced memory consumption and fewer fatal/corruption errors.
 
 * **Improvement to Cloud Run local development webview** The webview now immediately shows any input error without needing to click “Run” button.
@@ -286,16 +319,19 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ![Cloud Run Validation](https://www.gstatic.com/cloudssh/cloudcode/cloud-run-validation-improvements.png)
 
 ### Bug Fixes
+
 * Fixed the application name to use kebab case while cloning template repos. [#430](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/430)
 
 ## Version 1.12.1 (June 2021)
 
 ### Bug Fixes
+
 * Fixed an issue where debug path mapping was broken with Skaffold 1.25.0.
 
 ## Version 1.12.0 (May 2021)
 
 ### New Features
+
 * **Build with Cloud Build** When Deploying to Cloud Run or Running/Debugging on Kubernetes, you can select to build with [Cloud Build](https://cloud.google.com/build). Cloud Code will guide you through setting up Cloud Build in your project, and then will automatically configure and submit builds for each image to the cloud. Cloud Code will also make suggestions to use Cloud Build based on your current development environment. For example, Cloud Build will be recommended for deployment to GKE from ARM based clients because of the processor architecture mismatch.
 
 ![Google Cloud Build](https://www.gstatic.com/cloudssh/cloudcode/cloud-build.png)
@@ -303,20 +339,24 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 * **Minikube Auto Stop** Improved client side performance for auto scheduling the minikube clusters started by cloud code.
 
 ### Updates
-* **Cloud Run** Cloud Run managed deployments now allow up to 8 GiB memory for any deployments with at least 2 vCPUs allocated. 
+
+* **Cloud Run** Cloud Run managed deployments now allow up to 8 GiB memory for any deployments with at least 2 vCPUs allocated.
 
 ### Bug Fixes
+
 * Fixed an issue where validation to have docker installed is not needed when using Google Cloud Build for deploying applications.
 * Support multiple skaffold configurations in one single configuration file. [#424](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/424)
 
 ## Version 1.11.1 (May 2021)
 
 ### Bug Fixes
+
 * Fixed an issue where views were slow to load in Visual Studio Code 1.56.0.
 
 ## Version 1.11.0 (April 2021)
 
 ### Updates
+
 * **Updated Explorer setup experience:** Explorers that require any setup steps now guide you through the process of logging in, selecting a project, and enabling any required APIs in a more interactive and friendly way.
 * **Streamlined Explorer views:** Secret values in Secret Tree View and ConfigMaps’ values in Kubernetes Explorer are now accessible in read-only (instead of editable) documents.
 * **Enhanced minikube management:** Multi-step quick pick menu for minikube now comes with cancel and back buttons for easy navigation.
@@ -325,6 +365,7 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 * **Improved error state:** Get unstuck quicker with more proactive error messaging in the Kubernetes local development webview.
 
 ### Bug Fixes
+
 * Fixed an issue where .NET debugger was using the wrong debugger path with Skaffold. Added `debuggerPath` and `processId` field to the .NET debugger to enable setting the debugger path and process ID of the debuggee. [#397](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/397), [#418](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/418)
 * Fixed an issue where the artifacts property needed to be specified under the default skaffold’s profile even when there were additional profiles. [#398](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/398)
 * Fixed an issue where multiple prompts to install necessary version of Cloud SDK that take up screen space. [#414](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/414)
@@ -333,6 +374,7 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ## Version 1.10.0 (March 2021)
 
 ### New Features
+
 * **GKE Autopilot Cluster Creation:** You can now create [GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview) clusters with the Cluster Creation wizard for a more managed mode of operation, taking advantage of Autopilot’s auto-provisioning and autoscaling of GKE infrastructure. For more details on how to configure your cluster, see the [Adding a cluster](https://cloud.google.com/code/docs/vscode/adding-a-cluster#creating_or_using_an_existing_kubernetes_cluster_with_gke) guide.
 
 ![autopilot cluster creation](https://www.gstatic.com/cloudssh/cloudcode/gke-autopilot-cluster-creation.png)
@@ -340,11 +382,13 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 * **Initial support for M1-based Apple Silicon Macs:** With this update, you can now build and work locally on your M1 Mac with Cloud Code, minikube, and Skaffold for ARM64 targets. Please note that [Rosetta 2](https://support.apple.com/en-us/HT211861) is currently required as several dependencies are still x86/64 only, refer to [instructions](https://cloud.google.com/code/docs/vscode/arm). Follow this [GitHub issue](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/390) for more information and to track the latest updates.
 
 ### Updates
+
 * **Dry-run YAML Files:** Perform a dry run of your configuration and check its validity using the newly added dry-run command (with either client-side or server-side validation). Dry-run evaluates the resource request without persisting objects to storage, and displays the validation result as a toast notification. To discover more commands to help with editing your configuration files, see the [YAML editing](https://cloud.google.com/code/docs/vscode/yaml-editing#performing_a_dry-run_of_a_yaml_file) guide.
 
 ![dry-run](https://www.gstatic.com/cloudssh/cloudcode/dry-run.png)
 
 ### Bug Fixes
+
 * Fixed passing environment variables to skaffold.yaml for customizing build arguments. [#394](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/394), [#378](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/378)
 * Fixed the ability to specify skaffold tags (like docker image tags) through launch config for customization. [#335](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/335)
 * Fixed skaffold workspace to support config from non-root directory. [#377](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/377)
@@ -354,18 +398,21 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ## Version 1.9.0 (February 2021)
 
 ### New Features
+
 * **GKE Autopilot:** You can now deploy your application to GKE Autopilot right from VSCode Cloud Code menu. GKE Autopilot is a new mode of operation of GKE clusters where infrastructure is auto managed by Google, provides auto provisioning and auto scaling of GKE infra to the end user. Overview of [GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview).
 * **Pre-release Channel:** You can now use insider builds for trying out upcoming features and give us feedback before they are publicly released. You can go to cloud code settings “Cloud Code: Update Channel” and select an insider build that you want to try out. This will help us to make sure your development tools aren’t affected by the release of Cloud Code Plugin.
 
 ![pre-release checkbox](https://www.gstatic.com/cloudssh/cloudcode/prerelease-in-welcome-page.png)
 
 ### Bug Fixes
+
 * Fixed to avoid checking for dependencies while deploying to K8 if deps are not auto managed. [#375](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/375)
 * Fixed broken link to browse launch.json config in the output window of deployment logs.
 
 ## Version 1.8.0 (January 2021)
 
 ### New Features
+
 * **Custom templates:** You can now create applications from custom templates! Cloud Code offers the option of importing a Git template repository so that teams can get started quickly from a standard set of starter applications, services, and infrastructure configuration best suited to teams’ organizational policies. To read more about templates and how to get started, head over to [setting up a template repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo) guide.
 
 ![custom templates](https://www.gstatic.com/cloudssh/cloudcode/contextual-status-bar.png)
@@ -382,12 +429,14 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 ![new sample application READMEs](https://www.gstatic.com/cloudssh/cloudcode/vscode-readme.png)
 
 ### Updates
+
 * **.NET launch debugging support:** In addition to the attach configuration, Cloud Code now supports a launch configuration for .NET. You can now deploy and attach to a .NET application with a single configuration.
 * **New home for Cloud Run properties:** Cloud Run properties no longer show up in a separate view. They can be found conveniently in the Cloud Run Explorer under **Properties**.
 
 ![new sample application READMEs](https://www.gstatic.com/cloudssh/cloudcode/cr-explorer-properties.png)
 
 ### Bug Fixes
+
 * Fixed Cloud SDK auto dependency installation corruption issue on Windows. [#346](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/346)
 * Fixed Python enabling to debug external sources. [#328](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/328)
 * Fixed YAML outline to handle arrays of objects. [#339](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/339)
@@ -399,13 +448,14 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 
 ## Version 1.7.2 (January 2021)
 
-### Bug Fixes 
-* Fix an issue where dependencies path gets invalidated on Windows. [#362](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/362) 
+### Bug Fixes
+
+* Fix an issue where dependencies path gets invalidated on Windows. [#362](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/362)
 * Fix an issue where Cloud SDK in the path gets corrupted on Windows since there is reentry while installing dependencies. [#347](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/347)
 
 ## Version 1.7.1 (December 2020)
 
-### New Features 
+### New Features
 
 * **Project Selection Flows:** The project selector has been refreshed to deliver an improved UX, faster load times, and recent projects listed first. The project selection/login/logout should sync between all webviews and explorers.
 
@@ -415,12 +465,14 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 * **YAML Editing Support:** YAML editing support can now accurately be limited to a subdirectory under the working directory by setting `cloudcode.yaml.yamlFileMatcher`. [Learn more](https://cloud.google.com/code/docs/vscode/yaml-editing)
 
 ### Updates
+
 * Replace general icons with VSCode Codicons for commands.
 * Improved Cloud Run (fully managed) support:
 * Allocate up to 4 vCPUs to container instances with the increased limit.
 
-### Bug Fixes 
-* Fix .NET debugging fails to open a source file when the breakpoint is hit. [#292](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/292) 
+### Bug Fixes
+
+* Fix .NET debugging fails to open a source file when the breakpoint is hit. [#292](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/292)
 * Refresh AKS cluster UI after modifying the active subscription. [#239](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/239)
 
 ## Version 1.7.0 (October 2020)
@@ -445,7 +497,7 @@ Module-based application deployment through [Skaffold modules](https://cloud.goo
 
 ### Bug Fixes
 
-* Minikube status checks are aggressive and lead to generating more log files that can slow down other build tools. The change is to remove the live status bar but use minikube status bar to monitor status of different profiles and is less invasive. [#286](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/286) [#313](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/313) 
+* Minikube status checks are aggressive and lead to generating more log files that can slow down other build tools. The change is to remove the live status bar but use minikube status bar to monitor status of different profiles and is less invasive. [#286](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/286) [#313](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/313)
 
 * Cloud run emulator didn’t bootstrap itself on windows since it chose the hyper-v that got blocked on the need for special permissions, Cloud code now defaults to using docker driver for the emulator.
 
@@ -509,7 +561,7 @@ the active context associated with your current cluster and move to another if y
 
 ### Bug Fixes
 
-* Cloud Code will now allow you to browse and switch between Kubernetes contexts. [#131](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/131) 
+* Cloud Code will now allow you to browse and switch between Kubernetes contexts. [#131](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/131)
 * You can now browse PersistentVolumeClaim in the Kubernetes Explorer. [#193](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/193)
 
 ## Version 1.3.0 (April 2020)
@@ -546,16 +598,15 @@ We are pleased to announce [Cloud Run](https://cloud.google.com/run) support in 
 ### Bug Fixes
 
 * Add support for Google Cloud Run. [#231](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/231)
-* Hanging while installing dependencies. [#227](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/227) 
-* Cannot start debugger for .NetCore project. [#225](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/225) 
+* Hanging while installing dependencies. [#227](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/227)
+* Cannot start debugger for .NetCore project. [#225](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/225)
 * GKE Explorer does not work in windows 10. [#224](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/224)
 * Add Configuration to Existing Project is broken. [#223](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/223)
-* Add a guidance message in case no Kubernetes manifest are present. [#203](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/203) 
+* Add a guidance message in case no Kubernetes manifest are present. [#203](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/203)
 
 ## Version 1.2.1 (March 2020)
 
 Updated the extension to be compatible with the latest version of Visual Studio code. Fixed an issue introduced by the latest update that caused specific terminal commands to hang.
-
 
 ## Version 1.2.0 (February 2020)
 
@@ -582,8 +633,8 @@ Updated the extension to be compatible with the latest version of Visual Studio 
 
 ### Bug Fixes
 
-* Cloud Code will no longer continually switch user context to the output window. [#176](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/176) 
-* Fixed an issue where the Logs Viewer hangs when you don’t have permission to list all namespaces. [#201](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/201) 
+* Cloud Code will no longer continually switch user context to the output window. [#176](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/176)
+* Fixed an issue where the Logs Viewer hangs when you don’t have permission to list all namespaces. [#201](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/201)
 * Fixed an issue where Open with Cloud Code would not clone a repository in some cases.
 * Fixed an issue where Cloud Shell would fail to create an SSH configuration when the gcloud command-line tool prompted for survey participation.
 
@@ -627,7 +678,7 @@ We are pleased to announce that Cloud Code is now GA!
 
 ### New Features
 
-* **Cloud Shell Integration** Use the ‘Open with Cloud Code’ feature to quickly get started using Google Cloud Platform. It uses a remote development environment in [Cloud Shell](https://cloud.google.com/shell/docs) which means you’ll get to skip setup and start developing with Cloud Code with the click of a button. 
+* **Cloud Shell Integration** Use the ‘Open with Cloud Code’ feature to quickly get started using Google Cloud Platform. It uses a remote development environment in [Cloud Shell](https://cloud.google.com/shell/docs) which means you’ll get to skip setup and start developing with Cloud Code with the click of a button.
 
     With ‘Open with Cloud Code’, you can edit, run, and debug code; as well as utilize all of Cloud Code's features directly from inside Cloud Shell. Visual Studio Code's integrated terminal allows direct interaction with command line utilities running in Cloud Shell, such as the gcloud command-line tool, skaffold, and kubectl.
 
