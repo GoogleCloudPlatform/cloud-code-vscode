@@ -15,16 +15,18 @@ unified authentication experience when you develop with Google Cloud Services.
 ## Supporting your development workflow
 
 Get run-ready sample applications, out-of-the-box configuration snippets, support for key Google Cloud Services like Cloud APIs and Google Cloud Build,
-Cloud Native Buildpacks, Secrets Manager, one-click deployment, a tailored debugging experience, iterative run/debug experience and much more. Cloud Code makes 
+Cloud Native Buildpacks, Secrets Manager, one-click deployment, a tailored debugging experience, iterative run/debug experience and much more. Cloud Code makes
 developing with Kubernetes and Cloud Run a whole lot easier!
 
 <details>
   <summary>Read more</summary>
 
-  ### Highlights:
-  - Pick your preferred language with Cloud Code’s support for Go, Java, Node.js, Python, and .NET Core app development.
-  - Get straight to developing with Cloud Code’s simplified authentication workflow that uses your Google Cloud credentials.
-  - Monitor your app with streaming logs and customize the output with additional filters to produce results that are meaningful to you.
+### Highlights
+
+- Pick your preferred language with Cloud Code’s support for Go, Java, Node.js, Python, and .NET Core app development.
+- Get straight to developing with Cloud Code’s simplified authentication workflow that uses your Google Cloud credentials.
+- Monitor your app with streaming logs and customize the output with additional filters to produce results that are meaningful to you.
+
 </details>
 
 ## Kubernetes development
@@ -36,20 +38,22 @@ you spend less time on configuration and context-switching, so you can focus on 
 <details>
   <summary>Read more</summary>
 
-  ### Highlights:
-  - Get started with built-in ready-to-run starter Kubernetes apps for your favorite languages and frameworks.
+### Highlights
+
+- Get started with built-in ready-to-run starter Kubernetes apps for your favorite languages and frameworks.
     [Read the docs](https://cloud.google.com/code/docs/vscode/creating-an-application)
-  - Maintain an efficient development workflow with Cloud Code’s rapid edit, package, and deploy to cluster loop; see your edits reflected in your app in real-time!
+- Maintain an efficient development workflow with Cloud Code’s rapid edit, package, and deploy to cluster loop; see your edits reflected in your app in real-time!
     [Read the docs](https://cloud.google.com/code/docs/vscode/running-an-application)
-  - Browse and manage your  Kubernetes resources from within your IDE with the Kubernetes Explorer. Just right-click and select an available action for your resource,
+- Browse and manage your  Kubernetes resources from within your IDE with the Kubernetes Explorer. Just right-click and select an available action for your resource,
     no complex CLI commands necessary. [Read the docs](https://cloud.google.com/code/docs/vscode/using-the-kubernetes-explorer)
-  - Create a remote Kubernetes cluster with Google Kubernetes Engine, EKS, or AKS, or work with a local cluster, either the integrated minikube cluster or a Docker
+- Create a remote Kubernetes cluster with Google Kubernetes Engine, EKS, or AKS, or work with a local cluster, either the integrated minikube cluster or a Docker
     Desktop local cluster, to run your app. [Read the docs](https://cloud.google.com/code/docs/vscode/adding-a-cluster)
-  - Set breakpoints, inspect variables, and perform other debugging tasks with integrated debugging support and without having to manually set up configuration.
+- Set breakpoints, inspect variables, and perform other debugging tasks with integrated debugging support and without having to manually set up configuration.
     [Read the docs](https://cloud.google.com/code/docs/vscode/debug)
-  - Make easy work of setting up and customizing Kubernetes configuration files with Cloud Code’s YAML authoring assistance with out-of-the-box solutions for common
+- Make easy work of setting up and customizing Kubernetes configuration files with Cloud Code’s YAML authoring assistance with out-of-the-box solutions for common
     schema, support for Custom Resources (CRDs) like Istio and Knative, smart completions, syntax coloring, documentation on hover, and linting support.
     [Read the docs](https://cloud.google.com/code/docs/vscode/yaml-editing)
+
 </details>
 
 ## Cloud Run development
@@ -60,27 +64,37 @@ logs accessible in the Log Viewer. If you’d prefer a local development workflo
 <details>
   <summary>Read more</summary>
 
-  ### Highlights:
-  - Deploy a service to Cloud Run, customizing your deployment platform and build settings along the way, from within your IDE.
+### Highlights
+
+- Deploy a service to Cloud Run, customizing your deployment platform and build settings along the way, from within your IDE.
     [Read the docs](https://cloud.google.com/code/docs/vscode/deploying-a-cloud-run-app)
-  - Locally debug your service via the Cloud Run emulator and perform tasks you normally do when debugging local code as you develop your app. With Cloud Code’s fast
+- Locally debug your service via the Cloud Run emulator and perform tasks you normally do when debugging local code as you develop your app. With Cloud Code’s fast
     iterative development, you can automatically redeploy changes to the emulator as you make them.
     [Read the docs](https://cloud.google.com/code/docs/vscode/debugging-a-cloud-run-app)
-  - Monitor the status of your Cloud Run services as well as their revisions and essential properties with the Cloud Run Explorer.
+- Monitor the status of your Cloud Run services as well as their revisions and essential properties with the Cloud Run Explorer.
     [Read the docs](https://cloud.google.com/code/docs/vscode/cloud-run-explorer)
+
 </details>
 
 ## Containerization made easy
+
 Create secure, production-ready container images from source code without having to worry about a Dockerfile with Cloud Code’s built-in support for
-Google Cloud Buildpacks. You get to focus on building your application, not containerizing it. 
+Google Cloud Buildpacks. You get to focus on building your application, not containerizing it.
 
 ## Built-in Secret Manager support
+
 Protect sensitive information and keep your app secure with Cloud Code’s integrated Secret Manager support. You can create, view, update, and use secrets in the
 Secret Manager view without having them in your codebase. [Read the docs](https://cloud.google.com/code/docs/vscode/secret-manager)
 
 ## Google Cloud APIs at your fingertip
+
 Browse available Cloud APIs, enable services, and install and learn how to integrate client libraries in your app without leaving your IDE and breaking your development
 flow, all with the API library browser. [Read the docs](https://cloud.google.com/code/docs/vscode/client-libraries)
+
+## Develop using Compute Engine Virtual Machines
+
+Browse Compute Engine Virtual Machines and their relevant properties without leaving your IDE.  Easily SSH into your VM using the terminal window and transfer files
+from your local environment to your virtual machine all with Cloud Code support for Compute Engine. [Read the docs](https://cloud.google.com/code/docs/vscode/manage-vms)
 
 ## Develop APIs with Apigee
 
@@ -103,4 +117,4 @@ through build and test cycles without impact to dependent applications.
 
 Please see our [security disclosure process](SECURITY.md).  All [security advisories](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories) are managed on Github.
 
-*Apache Log4j 2 Vulnerability (Log4j 2):* the Cloud Code guide to [_"Setting up a samples repository"_](https://cloud.google.com/code/docs/vscode/set-up-sample-repo) linked to a demonstration project with a sample using a vulnerable version of Log4j 2. We strongly advise customers to update their samples repositories. Visit the [security advisory](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories/GHSA-3ghm-xvvq-qqh6) for details and remediation.
+*Apache Log4j 2 Vulnerability (Log4j 2):* the Cloud Code guide to [*"Setting up a samples repository"*](https://cloud.google.com/code/docs/vscode/set-up-sample-repo) linked to a demonstration project with a sample using a vulnerable version of Log4j 2. We strongly advise customers to update their samples repositories. Visit the [security advisory](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories/GHSA-3ghm-xvvq-qqh6) for details and remediation.
