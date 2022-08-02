@@ -93,7 +93,7 @@ flow, all with the API library browser. [Read the docs](https://cloud.google.com
 
 ## Develop using Compute Engine Virtual Machines
 
-Browse Compute Engine Virtual Machines and thier relevant properties without leaving your IDE.  Easily SSH into your VM using the terminal window and transfer files
+Browse Compute Engine Virtual Machines and their relevant properties without leaving your IDE.  Easily SSH into your VM using the terminal window and transfer files
 from your local environment to your virtual machine all with Cloud Code support for Compute Engine. [Read the docs](https://cloud.google.com/code/docs/vscode/manage-vms)
 
 ## Develop APIs with Apigee
