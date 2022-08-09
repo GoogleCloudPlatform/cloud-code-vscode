@@ -2,19 +2,19 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.20.0 (Jul 2022)
+## Version 1.20.0 (Aug 2022)
 
 ### New Features
-
-## Version 1.19.0 (Jul 2022)
 
 * **Google Compute Engine:**
   Cloud Code now supports Google Compute Engine helping you [work with your Virtual Machines right from your IDE.](https://cloud.google.com/code/docs/vscode/manage-vms)
   * Use the Compute Engine Explorer to [view the properties of your VMs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_vms) and quickly access the Cloud Console to edit these properties.
   * Use the [Open SSH](https://cloud.google.com/code/docs/vscode/manage-vms#connecting_to_a_vm) button in the explorer to open a VS Code integrated terminal SSH'd into your VM instance. If the connection fails, Cloud Code will help you troubleshoot common connectivity issues.
-  ![GCE Explorer SSH](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-ssh-release-notes.png)
+    ![GCE Explorer SSH](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-ssh-release-notes-v2.png)
+  * Use the [Upload File via SCP](https://cloud.google.com/code/docs/vscode/manage-vms#uploading_a_file_to_a_vm) button to upload files from your local client to your VM instance. Once files are uploaded, you can easily access them in your instance's home directory using the SSH connection provided by Cloud Code.
+    ![GCE Explorer SCP](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-scp-release-notes-v2.png)
   * Use the [View Logs](https://cloud.google.com/code/docs/vscode/manage-vms#viewing_application_logs_on_a_vm) button to open the Cloud Code Logs Viewer to view logs from your VMs to help you debug your applications.
-  ![GCE Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-logs-viewer-release-notes.png)
+  ![GCE Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/gce-explorer-logs-viewer-release-notes-v2.png)
 
 ### Updates
 
@@ -26,6 +26,8 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * Skaffold clean up error [#606](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/606)
 * Error deploying with cloudsql connection [#613](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/613)
 * Fixed an issue where child processes might continue to run after exiting VS Code
+
+## Version 1.19.0 (Jul 2022)
 
 ### New Features
 
