@@ -2,6 +2,17 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.20.2 (Sep 2022)
+
+### Updates
+
+* Cloud Code for VSCode VSIX is now verifiable using the VsixSignTool, [learn more](https://cloud.google.com/code/docs/vscode/install#optional_verifying_vsix_using_vsixsigntool). 
+* Improved code snippet accuracy and UX for the Cloud APIs explorer including some new features
+  * Added new Feedback button in snippets.
+    ![Cloud API Snippet feedback](https://www.gstatic.com/cloudssh/cloudcode/cloud-api-feedback.png)
+  * Added product icons to improve scannability.
+    ![Cloud API Explorer Icons](https://www.gstatic.com/cloudssh/cloudcode/cloud-api-icons.png)
+
 ## Version 1.20.1 (Aug 2022)
 
 ### Updates
