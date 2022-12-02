@@ -14,10 +14,6 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
   * [Invoke your functions](placeholder) using the VS Code terminal, and modify your inputs on the fly by using any JSON-formatted file.
   * Use the [Logs Viewer](placeholder) to view logs from your Cloud Functions to debug your code.
 
-### Updates
-
-* The YAML language server now supports Skaffold schemas up to v4beta1
-
 ### Bug Fixes
 
 * Miscellaneous bug and crash fixes
