@@ -99,7 +99,7 @@ from your local environment to your virtual machine all with Cloud Code support 
 ## Develop Cloud Functions locally
 
 View, download, deploy, and test Cloud Functions directly from Cloud Code. Leverage the power of the VS Code IDE to make changes to your Cloud Function, then deploy those changes
-without ever needing to leave Cloud Code! [Read the docs](https://cloud.google.com/code/docs/vscode/manage-vms)
+without ever needing to leave Cloud Code. [Read the docs](https://cloud.google.com/code/docs/vscode/create-deploy-function)
 
 ## Develop APIs with Apigee
 

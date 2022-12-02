@@ -7,12 +7,16 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 ### New Features
 
 * **Cloud Functions**
-  Cloud Code now supports Cloud Functions, helping you [work with your Cloud Functions right from your IDE!](placeholder)
-  * Use the Cloud Functions Explorer to [view your project's Cloud Functions properties and source code](placeholder).
-  * Download your Cloud Functions to [edit and modify your code] with the power of VS Code, then [deploy those changes
-  directly from your IDE](placeholder)!
-  * [Invoke your functions](placeholder) using the VS Code terminal, and modify your inputs on the fly by using any JSON-formatted file.
-  * Use the [Logs Viewer](placeholder) to view logs from your Cloud Functions to debug your code.
+  Cloud Code now supports Cloud Functions, helping you [work with your Cloud Functions right from your IDE](https://cloud.google.com/code/docs/vscode/create-deploy-function).
+  * Use the Cloud Functions Explorer to view your project's Cloud Functions properties and source code.
+  ![Cloud Functions Explorer](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_explorer_highlight.png)
+  * Download your Cloud Functions to [edit your code locally](https://cloud.google.com/code/docs/vscode/setup-local-functions-dev-environment), then deploy those changes
+  directly from Cloud Code.
+  ![Cloud Functions Deployment](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_deploy_highlight.png)
+  * Invoke your functions from VS Code and modify your inputs on the fly by using any JSON-formatted file.
+  ![Cloud Functions Invocation](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_curl_highlight.png)
+  * Use the Cloud Code Logs Viewer to view logs from your Cloud Functions to debug your code.
+  ![Cloud Functions Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_logs_viewer_logtype_highlight.png)
 
 ### Bug Fixes
 
