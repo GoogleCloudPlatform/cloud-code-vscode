@@ -2,13 +2,33 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.0 (Dec 2022)
+
+### New Features
+
+* **Cloud Functions**
+  Cloud Code now supports Cloud Functions, helping you [work with your Cloud Functions right from your IDE!](placeholder)
+  * Use the Cloud Functions Explorer to [view your project's Cloud Functions properties and source code](placeholder).
+  * Download your Cloud Functions to [edit and modify your code] with the power of VS Code, then [deploy those changes
+  directly from your IDE](placeholder)!
+  * [Invoke your functions](placeholder) using the VS Code terminal, and modify your inputs on the fly by using any JSON-formatted file.
+  * Use the [Logs Viewer](placeholder) to view logs from your Cloud Functions to debug your code.
+
+### Updates
+
+* The YAML language server now supports Skaffold schemas up to v4beta1
+
+### Bug Fixes
+
+* Miscellaneous bug and crash fixes
+
 ## Version 1.20.4 (Nov 2022)
 
 ### Updates
 
 * Supported locations for Cloud Run deployments are now updated dynamically
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed a bug where adding and updating secrets only worked for limited character sets
 * Fixes and optimizations related to starting and stopping minikube
