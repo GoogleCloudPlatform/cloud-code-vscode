@@ -2,19 +2,6 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## Version 1.20.4 (Nov 2022)
-
-### Updates
-
-* Supported locations for Cloud Run deployments are now updated dynamically
-
-## Bug Fixes
-
-* Fixed a bug where adding and updating secrets only worked for limited character sets
-* Fixes and optimizations related to starting and stopping minikube
-* Fixed a bug preventing breakpoints from working correctly when using Buildpacks
-* Miscellaneous crash fixes
-
 ## Version 1.20.3 (Oct 2022)
 
 ### Updates
