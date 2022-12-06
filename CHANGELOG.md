@@ -6,7 +6,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### New Features
 
-* **Cloud Functions**
+* **Cloud Functions:**
   Cloud Code now supports Cloud Functions, helping you [work with your Cloud Functions right from your IDE](https://cloud.google.com/code/docs/vscode/create-deploy-function).
   * Use the Cloud Functions Explorer to view your project's Cloud Functions properties and source code.
   ![Cloud Functions Explorer](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_explorer_highlight.png)
