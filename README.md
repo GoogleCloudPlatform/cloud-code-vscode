@@ -96,6 +96,11 @@ flow, all with the API library browser. [Read the docs](https://cloud.google.com
 Browse Compute Engine Virtual Machines and their relevant properties without leaving your IDE.  Easily SSH into your VM using the terminal window and transfer files
 from your local environment to your virtual machine all with Cloud Code support for Compute Engine. [Read the docs](https://cloud.google.com/code/docs/vscode/manage-vms)
 
+## Develop Cloud Functions locally
+
+View, download, deploy, and test Cloud Functions directly from Cloud Code. Leverage the power of the VS Code IDE to make changes to your Cloud Function, then deploy those changes
+without ever needing to leave Cloud Code. [Read the docs](https://cloud.google.com/code/docs/vscode/create-deploy-function)
+
 ## Develop APIs with Apigee
 
 Develop your API proxies and verify the functionality through unit and manual testing using the Apigee Emulator (local runtime). Quickly iterate

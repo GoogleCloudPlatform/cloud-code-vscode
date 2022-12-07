@@ -2,13 +2,32 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.0 (Dec 2022)
+
+### New Features
+
+* **Cloud Functions:**
+  Cloud Code now supports Cloud Functions, helping you [work with your Cloud Functions right from your IDE](https://cloud.google.com/code/docs/vscode/create-deploy-function).
+  * Use the Cloud Functions Explorer to view your project's Cloud Functions properties and source code.
+  ![Cloud Functions Explorer](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_explorer_highlight.png)
+  * Download your Cloud Functions to [edit your code locally](https://cloud.google.com/code/docs/vscode/setup-local-functions-dev-environment), then [configure your local workspace](https://cloud.google.com/code/docs/vscode/manage-functions-workspace) to deploy those changes directly from Cloud Code.
+  ![Cloud Functions Deployment](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_deploy_highlight.png)
+  * Invoke your functions from VS Code and modify your inputs by using any JSON-formatted file.
+  ![Cloud Functions Invocation](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_curl_highlight.png)
+  * Use the Cloud Code Logs Viewer to view logs from your Cloud Functions to debug your code.
+  ![Cloud Functions Logs Viewer](https://www.gstatic.com/cloudssh/cloudcode/ccvsc_gcf_logs_viewer_logtype_highlight.png)
+
+### Bug Fixes
+
+* Miscellaneous bug and crash fixes
+
 ## Version 1.20.4 (Nov 2022)
 
 ### Updates
 
 * Supported locations for Cloud Run deployments are now updated dynamically
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed a bug where adding and updating secrets only worked for limited character sets
 * Fixes and optimizations related to starting and stopping minikube
