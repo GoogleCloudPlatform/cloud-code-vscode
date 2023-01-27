@@ -2,6 +2,27 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.1 (Jan 2023)
+
+### Notices
+
+* **Upcoming removal of Cloud Run for Anthos powered by KNative functionality:**
+  In the next release of Cloud Code (version 1.22.0), functionality enabling viewing and deploying to Cloud Run for Anthos
+  clusters powered by KNative will be removed. No changes are being made to non-Anthos Cloud Run functionality.
+
+### Updates
+
+* Let the [Go extension](https://code.visualstudio.com/docs/languages/go) manage dependent debugging
+  utilities instead of Cloud Code. [#704](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/704)
+* Provide a new styled proxy creation wizard for creating Apigee proxies with minimal inputs.
+* Auto-refresh Cloud Functions explorer when launch.config is updated.
+
+### Bug Fixes
+
+* Fixes for Google Cloud Functions.
+* Exception handling and crash fixes.
+* Allow wildcard base paths during Apigee proxy creation. [#708](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/708)
+
 ## Version 1.21.0 (Dec 2022)
 
 ### New Features
