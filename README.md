@@ -1,3 +1,5 @@
+*\*\*If you run into problems with managed dependencies failing on MacOS, it may be failing due to a [recent MacOS update](https://developer.apple.com/forums/thread/673827) that can cause the following error `xcrun: error: invalid active developer path`. If you experience this error, please run `xcode-select --install` and restart VSCode.\*\**
+
 # Cloud Code for Visual Studio Code
 
 Cloud Code for VS Code brings the power and convenience of IDEs to cloud-native application development. Cloud Code integrates with Google Cloud services like Google
