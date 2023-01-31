@@ -1,4 +1,4 @@
-*\*\*If you run into problems with managed dependencies failing on MacOS, it may be failing due to a [recent MacOS update](https://developer.apple.com/forums/thread/673827) that can cause the following error `xcrun: error: invalid active developer path`. If you experience this error, please run `xcode-select --install` and restart VSCode.\*\**
+*\*\*MacOS Users: Due to a recent [update to xcrun](https://developer.apple.com/forums/thread/673827), Managed Dependency installation may fail. To fix this, run `xcode-select --install` through the VSCode terminal. If that does not resolve the issue, run `sudo xcode-select --reset`\*\**
 
 # Cloud Code for Visual Studio Code
 
