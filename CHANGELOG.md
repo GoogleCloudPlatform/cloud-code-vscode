@@ -6,7 +6,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### Updates
 
-* Update to OSS Notices
+* Update to OSS Notices.
 
 ## Version 1.21.1 (January 2023)
 
