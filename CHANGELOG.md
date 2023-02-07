@@ -6,7 +6,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### Updates
 
-* Rename extension. 
+* Update to extension name. 
 
 ## Version 1.21.2 (January 2023)
 
