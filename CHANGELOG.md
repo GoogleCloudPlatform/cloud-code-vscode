@@ -2,6 +2,31 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.5 (April 2023)
+
+### New Features
+
+* Add support for [.gcloudignore](https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore) files for Cloud Functions.
+* New Workflows schemas are now supported in Cloud Code.
+    * This comes with in-line suggestions, validation, and auto-complete for all Workflows YAML files.
+    * Check out [this blog
+      post](https://cloud.google.com/blog/products/application-development/integrated-workflows-inside-your-ide-of-choice-help-you-develop)
+      for more information.
+  
+### Updates
+
+* Functionality enabling viewing and deploying to Cloud Run for Anthos clusters powered by KNative has been removed from Cloud Code.
+  * For more information on how to deploy the latest version of Cloud Run for
+    Anthos, which uses Anthos fleets and Anthos Service Mesh, visit the [deployment instructions](https://cloud.google.com/anthos/run/docs/deploy-application).
+  * No additional changes were made to Cloud Run functionality as part of this update.
+
+### Bug Fixes
+
+* Fix buttons on Cloud Functions welcome view not working.
+* Update the ordering of snippets presented in the API browser to be in consistent order.
+* Fix Cloud Run deployments with secrets set as environment variables.
+
+
 ## Version 1.21.4 (April 2023)
 
 ### Bug Fixes
