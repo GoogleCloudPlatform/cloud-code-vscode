@@ -2,6 +2,32 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.6 (June 2023)
+
+### Updates
+
+* Performance improvements for first time installation of managed dependencies.
+* More efficient handling of watchers in the Kubernetes explorer.
+* A new setting "cloudcode.dependencyPaths" allows you to explicitly set and
+  override the locations where Cloud Code will search for binaries the extension
+  has dependencies on.
+  * <img src="https://www.gstatic.com/cloudssh/cloudcode/dependency_paths.png" alt="CloudCode dependencyPaths"/>
+* The command "Dry-run Current Config for Server-side Validation" has been
+  removed from the command palette, as Cloud Code now shows server-side
+  dry-run information directly in the YAML text document. Learn more <a
+  href="https://cloud.google.com/code/docs/vscode/yaml-editing#validate_yaml_schema">here</a>.
+* Crash feedback no longer collects information around minikube failures, and
+  provides a new field where you can optionally provide contact information.
+* Default Apigee emulator updated to 1.9.2.
+* Updated webview styling.
+
+### Bug Fixes
+
+* Fixed an issue where Run/Debug on Kubernetes might clean up the wrong
+  deployment if switching current context during a deployment.
+* Fixed an issue where Cloud Code might become uninstalled if an insiders
+  channel installation failed.
+
 ## Version 1.21.5 (April 2023)
 
 ### New Features
