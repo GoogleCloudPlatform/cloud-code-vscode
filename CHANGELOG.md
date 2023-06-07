@@ -11,7 +11,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 * A new setting "cloudcode.dependencyPaths" allows you to explicitly set and
   override the locations where Cloud Code will search for binaries the extension
   has dependencies on.
-  * <img src="https://www.gstatic.com/cloudssh/cloudcode/dependency_paths.png" alt="CloudCode dependencyPaths"/>
+  * <img src="https://www.gstatic.com/cloudssh/cloudcode/dependency_paths.png" alt="A dropdown list of dependencies to add custom paths to."/>
 * The command "Dry-run Current Config for Server-side Validation" has been
   removed from the command palette, as Cloud Code now shows server-side
   dry-run information directly in the YAML text document. Learn more <a
