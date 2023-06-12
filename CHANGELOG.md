@@ -6,7 +6,7 @@ This page documents production updates to Cloud Code for Visual Studio Code. You
 
 ### Bug Fixes
 
-* Cloud Run deployments wipe out secret references after v1.21.6 release.
+* Fix issue where Cloud Run deployments would wipe out secret references.
   [#804](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/804)
 
 ## Version 1.21.6 (June 2023)
