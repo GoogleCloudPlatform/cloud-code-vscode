@@ -2,6 +2,16 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.21.8 (June 2023)
+
+### Bug Fixes
+
+* Fix Cloud Run deployment bug that crashes when deploying with a sql connection.
+* Fix gcloud installer script bug where the installer would break on a file path
+  with a space.
+  [#810](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/810)
+* Fix Project selector bug where the quickpick opens during initialization.
+
 ## Version 1.21.7 (June 2023)
 
 ### Bug Fixes
