@@ -2,11 +2,38 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.22.0 (July 2023)
+
+### New Features
+
+* **Cloud Code Login:**
+  Logging in to Google Cloud is no longer delegated to the Google Cloud CLI. This makes for a faster and more native login experience, and reduces Cloud Code's dependency on the Google Cloud CLI. You might need to re-login after this update is installed.
+  ![Cloud Code first party login in the browser](https://www.gstatic.com/cloudssh/cloudcode/cc-first-party-login.png)
+  * Note that this authentication method does not work to authenticate Google APIs in applications you develop. To do that, you now must install the Google Cloud CLI and get Application Default Credentials. See [Cloud Code documentation](https://cloud.google.com/code/docs/vscode/install#authenticate_credentials_for_debugging_applications_locally) for more information.
+* **Google Cloud CLI management updates:**
+  The most commonly encountered issue with Cloud Code occurs right at startup, when Cloud Code installs the Google Cloud CLI. This operation takes a lot of time and CPU. We've taken several steps to reduce this friction and give you more control over and insight into the installation process.
+  * Cloud Code now empowers users with more options to install Google Cloud CLI. The first time you use a feature that requires the CLI, you’ll be given the option to learn how to self-install it right from the IDE, use an existing installation, or continue with managed dependencies.
+  ![Prompt that shows the first time a user needs Google Cloud CLI](https://www.gstatic.com/cloudssh/cloudcode/gcloud-on-demand-first-time-prompt.png)
+  * The new "Install Google Cloud CLI" guide, built right into the IDE, makes it easy for both new and old users to get started with a self installed version of Google Cloud CLI. This way, you're in complete control of Cloud Code’s dependencies. You can also access this guide at any time by clicking "Install Google Cloud CLI" in the Help and Feedback explorer.
+  ![Guide that shows how to install the Google Cloud CLI](https://www.gstatic.com/cloudssh/cloudcode/gcloud-install-guide.png)
+  * Installation is postponed to the time the CLI is required. If you already use managed dependencies, the same delay you experienced every time you start up Cloud Code (if any) will occur right before you use functionality that requires the CLI or its components. We have worked to reduce the number of features dependent on the CLI, so this will occur less frequently.
+  * When using self managed dependencies, Cloud Code will help you install all required components and keep you up to date with minimum required versions.
+
+### Updates
+
+* Docker Desktop is no longer automatically launched by Cloud Code in operations that require it. These flows will now error out and you'll be asked to try again once you've launched Docker Desktop.
+
+### Bug Fixes
+
+* Managed dependencies install script does not work on Windows if the user path has a space.
+  [#810](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/810)
+
 ## Version 1.21.8 (June 2023)
 
 ### Bug Fixes
 
 * Fix Cloud Run deployment bug that crashes when deploying with a sql connection.
+  [#804](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/804)
 * Fix gcloud installer script bug where the installer would break on a file path
   with a space.
   [#810](https://github.com/GoogleCloudPlatform/cloud-code-vscode/issues/810)
