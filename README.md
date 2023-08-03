@@ -123,3 +123,6 @@ through build and test cycles without impact to dependent applications.
 Please see our [security disclosure process](SECURITY.md).  All [security advisories](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories) are managed on Github.
 
 *Apache Log4j 2 Vulnerability (Log4j 2):* the Cloud Code guide to [*"Setting up a samples repository"*](https://cloud.google.com/code/docs/vscode/set-up-sample-repo) linked to a demonstration project with a sample using a vulnerable version of Log4j 2. We strongly advise customers to update their samples repositories. Visit the [security advisory](https://github.com/GoogleCloudPlatform/cloud-code-vscode/security/advisories/GHSA-3ghm-xvvq-qqh6) for details and remediation.
+
+Cloud Code telemetry overall is handled in accordance with the Google Privacy Policy. When you use Cloud Code to interact with or utilize GCP Services (including via Cloud SDK), your information is handled in accordance with the [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-privacy-notice)
+
