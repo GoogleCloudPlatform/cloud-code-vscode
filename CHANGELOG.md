@@ -2,6 +2,21 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 1.22.1 (August 2023)
+
+### Updates
+
+* Consolidated Cloud Code status bar. Cloud Code quick menu including switching projects and more are accessible via this status bar entry.
+  <img src="https://www.gstatic.com/cloudssh/cloudcode/cloudcode_statusbar.png" alt="Cloud Code consolidated status bar"/>
+* Cloud Code project is now a configurable setting. Existing Cloud Code project is imported into this setting. Switching project can also still be done via status bar project selector.
+  <img src="https://www.gstatic.com/cloudssh/cloudcode/cloudcode_project_setting.png" alt="Cloud Code project setting"/>
+* Updated in-product feedback UI. You can attach logs from Cloud Code with the bug/feature request to help us fix issues and improve the product.
+  <img src="https://www.gstatic.com/cloudssh/cloudcode/cloudcode_feedback.png" alt="Cloud Code feedback UI"/>
+
+### Bug Fixes
+
+* Various first party authentication bugfixes.
+
 ## Version 1.22.0 (July 2023)
 
 ### New Features
