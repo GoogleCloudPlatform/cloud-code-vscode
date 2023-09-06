@@ -2,6 +2,31 @@
 
 This page documents production updates to Cloud Code for Visual Studio Code. You can check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
+## Version 2.0.0 (August 2023)
+
+### New Features
+
+*   **Duet AI <sup>Preview</sup>:** Use Duet AI, your AI-powered collaborator,
+    to accomplish tasks more effectively and efficiently. Duet AI provides
+    contextualized responses to your prompts to help guide you on what you're
+    trying to do with your code. It also shares source citations regarding which
+    documentation and code samples the assistant used to generate its responses.
+    You can do this right in the IDE to avoid having to context-switch out to
+    your browser or documentation.
+    [Read the docs](https://cloud.google.com/duet-ai/docs/overview)
+    ![Duet AI code generation](https://www.gstatic.com/cloudssh/cloudcode/duet_ai_code_generation.gif)
+
+### Updates
+
+*   Added `cloudcode.enable1stPartyAuth` setting, which you can set to false if
+    you are experiencing friction in signing into Cloud Code. This will revert
+    to using the Google Cloud CLI based authentication.
+
+### Bug Fixes
+
+*   Fix various styling issues on Logs Viewer and Welcome pages.
+*   Fix an issue where logging in to Google Cloud can stall out forever.
+
 ## Version 1.22.1 (August 2023)
 
 ### Updates
